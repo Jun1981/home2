@@ -1,0 +1,74 @@
+
+set encoding=utf-8
+"scriptencoding utf-8
+scriptencoding cp932
+"set fileencodings=cp932
+"set fileformats=dos,unix,mac
+
+""メニューの文字化けを直す
+source $VIMRUNTIME/delmenu.vim
+set langmenu=ja_jp.utf-8
+source $VIMRUNTIME/menu.vim
+
+
+" ウインドウの幅
+set columns=150
+" ウインドウの高さ
+set lines=40
+" 行間
+set linespace=2
+" コマンドラインの高さ(GUI使用時)
+set cmdheight=1	
+
+
+set guifont=Migu_1M:h12:cSHIFTJIS"set guifont=Consolas:h12
+set guioptions=                  
+set ambiwidth=double            
+
+
+
+
+
+
+
+"set guifont=MeiryoKe_Console:h12:w8:cSHIFTJIS
+"set guifont=MeiryoKe_Gothic:h12:w8:cSHIFTJIS
+"set guifont=MigMix_1M:h14:cSHIFTJIS  
+"set guifont=Migu_1M:h12:cSHIFTJIS  
+"set guifont=ゆたぽん（コーディング）:h14:cSHIFTJIS
+"set guifontwide=あんずもじ等幅:h12
+"set guifont=うずらフォント:h18:cSHIFTJIS
+"set guifontwide=ゆたぽん（コーディング）:h14:cSHIFTJIS
+"set guifont=Osaka－等幅:h14:cSHIFTJIS
+"set guifont=Yutapon_coding:h14:cSHIFTJIS
+"set guifont=KonatuTohaba:h17
+"set guifont=ARISAKA-等幅:h13:w9
+"set guifont=CourierBitmapZS-ja:h14
+"set guifontwide=Terminus-ja:h12
+"set guifont=IPAゴシック:h16
+"set guifont=VL_Gothic:h12
+"set guifont=あずきフォント:h18
+"set guifont=Takaoゴシック:h16
+"set guifont=Takaoゴシック:h16
+
+"colorscheme NightScape
+"colorscheme Camo
+"colorscheme desert
+"colorscheme desertEx
+"colorscheme Desert256
+"colorscheme lucius
+
+colorscheme Candycode      
+
+
+".gvimrc カラー設定
+"カラー設定した後にCursorIMを定義する方法
+
+
+if has('multi_byte_ime')
+  "highlight Cursor guifg=NONE guibg=Green
+  highlight CursorIM guifg=NONE guibg=#33ee33
+endif
+gui 
+"set transparency=240
+

@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "current_profile_name": "default",
+  "repos": [
+    {
+      "type": "git",
+      "path": "github.com/scrooloose/nerdcommenter",
+      "version": "e679d8a34193d1ac93b98ed792cdde7c9b1104a1"
+    }
+  ],
+  "profiles": [
+    {
+      "name": "default",
+      "repos_path": [
+        "github.com/scrooloose/nerdcommenter"
+      ]
+    }
+  ]
+}
