@@ -33,15 +33,30 @@ set winaltkeys=no
 
 vnoremap <A-/> :s/\\/\//g<CR>
 ".vimrCを開く
-nnoremap <F2> :e~/.vimrc<CR>
-nnoremap <C-S-v> :e ~/.vimrc<CR>
+"nnoremap <F2> :e~/.vimrc<CR>
+"nnoremap <C-S-v> :e ~/.vimrc<CR>
 nnoremap <M-v> :e ~/.vimrc<CR>
+nnoremap <M-V> :e ~/_gvimrc<CR>
+"現在ファイル再読込
+nnoremap <M-s> :source%<CR>
+
+
+
 
 "helpの中のリンクへ移動
 
 nnoremap <M-j> /|[^ |]\+|
 
 "Nmap <C-A-v> :e ~/.vimrC<CR>
+"
+"
+
+"プラグインのキーセッティング
+"Denite
+nnoremap <M-b> :Denite buffer<CR>
+nnoremap <M-f> :Denite file/old<CR>
+nnoremap <M-y> :Denite neoyank<CR>
+
 
 "----------------------------------------------------------------------------------------------------
 

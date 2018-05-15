@@ -67,7 +67,8 @@ nnoremap <silent><F3>  :call ToggleGuiOptions('m')<CR>
 "colorscheme Desert256
 "colorscheme lucius
 
-colorscheme Candycode      
+"colorscheme Candycode      
+colorscheme Candy      
 
 
 ".gvimrc ÉJÉâÅ[ê›íË

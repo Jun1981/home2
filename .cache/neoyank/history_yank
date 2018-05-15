@@ -1,0 +1,2 @@
+2.0
+{"\"":[["nnoremap <M-V> :e ~/_gvimrc<CR>\n","V"],["nnoremap <M-f> :Denite file/old<CR>\n","V"]]}
