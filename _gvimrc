@@ -1,7 +1,10 @@
 
-set encoding=utf-8
-"scriptencoding utf-8
-scriptencoding cp932
+
+""set encoding=utf-8
+"set encoding=cp932
+""scriptencoding utf-8
+"scriptencoding cp932
+
 "set fileencodings=cp932
 "set fileformats=dos,unix,mac
 
@@ -24,6 +27,12 @@ set cmdheight=1
 set guifont=Migu_1M:h12:cSHIFTJIS"set guifont=Consolas:h12
 set guioptions=                  
 set ambiwidth=double            
+
+
+" ツールバーの表示/非表示
+nnoremap <silent><F4> :call ToggleGuiOptions('T')<CR>
+"メニューバーの表示/非表示
+nnoremap <silent><F3>  :call ToggleGuiOptions('m')<CR>
 
 
 
@@ -71,4 +80,3 @@ if has('multi_byte_ime')
 endif
 gui 
 "set transparency=240
-
