@@ -1,8 +1,16 @@
 set nocompatible       " vimですよ(最初に書く)
-set shellslash
+set shellslash          "Windowsのパス用？
 filetype plugin indent on     " (5)
 
 
+
+set encoding=cp932
+"scriptencoding utf-8
+scriptencoding cp932
+
+
+
+"set encoding=utf-8
 "set encoding=utf-8
 "set encoding=cp932
 "scriptencoding cp932
@@ -17,6 +25,34 @@ filetype plugin indent on     " (5)
 "-------------------------------------------------------
 
 
+"キーカスタマイズ
+"--------------------
+"--------------------------------------------------------------------------------
+set winaltkeys=no 
+
+
+vnoremap <A-/> :s/\\/\//g<CR>
+".vimrCを開く
+nnoremap <F2> :e~/.vimrc<CR>
+nnoremap <C-S-v> :e ~/.vimrc<CR>
+nnoremap <M-v> :e ~/.vimrc<CR>
+
+"helpの中のリンクへ移動
+
+nnoremap <M-j> /|[^ |]\+|
+
+"Nmap <C-A-v> :e ~/.vimrC<CR>
+
+"----------------------------------------------------------------------------------------------------
+
+
+
+
+
+"Pythonのパス指定
+"let g:python3_host_prog = expand('~/.pyenv/versions/neovim3/bin/python')
+let g:python3_host_prog = expand('~/python3')
+set runtimepath+=$HOME
 
 
 "guioptionのトグル
@@ -75,12 +111,6 @@ function! ToggleFullScreen()
     simalt ~x
   endif
 endfunction
-
-" ツールバーの表示/非表示
-nnoremap <silent><F4> :call ToggleGuiOptions('T')<CR>
-"メニューバーの表示/非表示
-nnoremap <silent><F3>  :call ToggleGuiOptions('m')<CR>
-
 "--------------------------------------------------
 if has('kaoriya')
   set iminsert=1 imsearch=0
@@ -94,7 +124,7 @@ endif
 
 if has('persistent_undo')
   set undodir=./vimundo,~/vimundo
-  augroup vimrc-undofile
+  augroup vimrC-undofile
     autocmd!
 	"~/以下のファイルのみ有効
     autocmd bufReadPre ~/* setlocal undofile
@@ -122,7 +152,6 @@ noremap <expr> gm (virtcol('$')/2).'\|'
 set nrformats-=octal
 "-------------------------------------------------------------------------------
 "Altキーでメニューを開かない
-set winaltkeys=no 
 
 "-------------------------------------------------------------------------------
 
@@ -229,7 +258,7 @@ set shell=powershell.exe"
 
 
 
-"プラグイン関係
+"dein プラグイン関係
 "----------------------------------------------------------------------------------------------------
 
 " プラグインが実際にインストールされるディレクトリ
@@ -268,11 +297,7 @@ endif
 if dein#check_install()
   call dein#install()
 endif
-
-
-
 "----------------------------------------------------------------------------------------------------
-
 
 
 "最後に書く
