@@ -10,6 +10,9 @@ scriptencoding cp932
 
 
 
+"----------------------------------------------------------------------------------------------------
+"
+
 "set encoding=utf-8
 "set encoding=utf-8
 "set encoding=cp932
@@ -39,29 +42,27 @@ nnoremap <M-v> :e ~/.vimrc<CR>
 nnoremap <M-V> :e ~/_gvimrc<CR>
 "現在ファイル再読込
 nnoremap <M-s> :source%<CR>
+noremap<ESC> <ESC><ESC>
+noremap <C-[> <C-[><C-[>
 
 
+"IMの動作
 
-
-"helpの中のリンクへ移動
-
-nnoremap <M-j> /|[^ |]\+|
-
-"Nmap <C-A-v> :e ~/.vimrC<CR>
-"
-"
-
-"プラグインのキーセッティング
-"Denite
-nnoremap <M-b> :Denite buffer<CR>
-nnoremap <M-f> :Denite file/old<CR>
-nnoremap <M-y> :Denite neoyank<CR>
-
+inoremap <ESC>  <ESC>:set iminsert=0<CR>
+inoremap <C-[>  <C-[>:set iminsert=0<CR>
 
 "----------------------------------------------------------------------------------------------------
 
+"helpの中のリンクへ移動
 
+"nnoremap <M-j> /|[^ |]\+|<CR>
+"nnoremap <M-j> /|[^ |]\+|<CR>
+"nnoremap <M-j> let @z=/|[^ |]\+| 
 
+"
+"
+
+"----------------------------------------------------------------------------------------------------
 
 
 "Pythonのパス指定
@@ -221,7 +222,6 @@ augroup END
 
 
 
-
 "-------------------------------------------------------------------------------
 " インデント
 set autoindent
@@ -273,7 +273,8 @@ set shell=powershell.exe"
 
 
 
-"dein プラグイン関係
+" プラグイン関係
+"dein
 "----------------------------------------------------------------------------------------------------
 
 " プラグインが実際にインストールされるディレクトリ
@@ -306,6 +307,7 @@ if dein#load_state(s:dein_dir)
   " 設定終了
   call dein#end()
   call dein#save_state()
+ 
 endif
 
 " もし、未インストールものものがあったらインストール
@@ -314,12 +316,83 @@ if dein#check_install()
 endif
 "----------------------------------------------------------------------------------------------------
 
+"Denite
+"キーマップ
+nnoremap <M-b> :Denite -auto_preview -mode=normal buffer<CR>
+nnoremap <M-f> :Denite -auto_preview -mode=normal file/old<CR>
+nnoremap <M-F> :Denite -auto_preview -mode=normal file_mru<CR>
+nnoremap <M-y> :Denite -auto_preview -mode=normal neoyank<CR>
+" カラースキームの切り替えを簡単にする
+" http://inputxoutput.com/vim-advent-calendar-2012/
+nnoremap <Leader>dc :Denite -auto-preview  colorscheme<CR>
+"----------------------------------------------------------------------------------------------------
+"
+"タブを切り替え可能に
+"noremap=<C-p> :tablast
+"noremap=<C-n> :tabNext
 
+
+"タブ関係
+" Anywhere SID.
+function! s:SID_PREFIX()
+  return matchstr(expand('<sfile>'), '<SNR>\d\+_\zeSID_PREFIX$')
+endfunction
+
+" Set tabline.
+function! s:my_tabline()  "{{{
+  let s = ''
+  for i in range(1, tabpagenr('$'))
+    let bufnrs = tabpagebuflist(i)
+    let bufnr = bufnrs[tabpagewinnr(i) - 1]  " first window, first appears
+    let no = i  " display 0-origin tabpagenr.
+    let mod = getbufvar(bufnr, '&modified') ? '!' : ' '
+    let title = fnamemodify(bufname(bufnr), ':t')
+    let title = '[' . title . ']'
+    let s .= '%'.i.'T'
+    let s .= '%#' . (i == tabpagenr() ? 'TabLineSel' : 'TabLine') . '#'
+    let s .= no . ':' . title
+    let s .= mod
+    let s .= '%#TabLineFill# '
+  endfor
+  let s .= '%#TabLineFill#%T%=%#TabLine#'
+  return s
+endfunction "}}}
+let &tabline = '%!'. s:SID_PREFIX() . 'my_tabline()'
+set showtabline=2 " 常にタブラインを表示
+
+" The prefix key.
+nnoremap    [Tag]   <Nop>
+nmap    t [Tag]
+" Tab jump
+for n in range(1, 9)
+  execute 'nnoremap <silent> [Tag]'.n  ':<C-u>tabnext'.n.'<CR>'
+endfor
+" t1 で1番左のタブ、t2 で1番左から2番目のタブにジャンプ
+
+map <silent> [Tag]c :tablast <bar> tabnew<CR>
+" tc 新しいタブを一番右に作る
+map <silent> [Tag]x :tabclose<CR>
+" tx タブを閉じる
+map <silent> [Tag]n :tabnext<CR>
+" tn 次のタブ
+map <silent> [Tag]p :tabprevious<CR>
+" tp 前のタブ
+"----------------------------------------------------------------------------------------------------
+"
+"
+"
+"
+"vim-airline
+let g:airline#extensions#tabline#enabled = 1
+"----------------------------------------------------------------------------------------------------
+"
+"カラー設定
+let g:airline_theme = 'molokai'
+let g:molokai_original = 1
 "最後に書く
 syntax enable
 
 
-
-
 "----------------------------------------------------------------------------------------------------
+
 

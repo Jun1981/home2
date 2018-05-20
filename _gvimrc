@@ -68,16 +68,23 @@ nnoremap <silent><F3>  :call ToggleGuiOptions('m')<CR>
 "colorscheme lucius
 
 "colorscheme Candycode      
-colorscheme Candy      
+"
+"カラー設定
 
 
-".gvimrc カラー設定
-"カラー設定した後にCursorIMを定義する方法
+
+"colorscheme molokai    
+colorscheme molokai2
+let g:molokai_original = 1
 
 
-if has('multi_byte_ime')
-  "highlight Cursor guifg=NONE guibg=Green
-  highlight CursorIM guifg=NONE guibg=#33ee33
-endif
-gui 
+"".gvimrc カラー設定
+""カラー設定した後にCursorIMを定義する方法
+"if has('multi_byte_ime')
+  ""highlight Cursor guifg=NONE guibg=Green
+  "highlight CursorIM guifg=NONE guibg=#33ee33
+"endif
+"gui 
+
+
 "set transparency=240

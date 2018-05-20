@@ -11,25 +11,210 @@
 # hlsearch on (H) or off (h):
 ~h
 # ç≈å„ÇÃ åüçıÉpÉ^Å[Éì:
-~MSle0~/col
+~MSle0~/ime
 
 # ç≈å„ÇÃ Substitute åüçıÉpÉ^Å[Éì:
-~MSle0&\\
+~MSle0&a
 
 # ç≈å„Ç…íuä∑Ç≥ÇÍÇΩï∂éöóÒ:
-$\/
+$
 
 # ÉRÉ}ÉìÉhÉâÉCÉì çÄñ⁄ÇÃóöó (êVÇµÇ¢Ç‡ÇÃÇ©ÇÁå√Ç¢Ç‡ÇÃÇ÷):
-:wq!
-|2,0,1526425878,,"wq!"
 :w!
-|2,0,1526425826,,"w!"
+|2,0,1526823592,,"w!"
+:enew
+|2,0,1526823369,,"enew"
+:help 'iminsert'
+|2,0,1526823115,,"help 'iminsert'"
+:map
+|2,0,1526822978,,"map"
+:colorscheme
+|2,0,1526820008,,"colorscheme"
+:colorscheme molokai2
+|2,0,1526819500,,"colorscheme molokai2"
+:noh
+|2,0,1526819403,,"noh"
+:w"
+|2,0,1526818652,,"w\""
+:wq!
+|2,0,1526818177,,"wq!"
+:w
+|2,0,1526817214,,"w"
+:set colorcolumn
+|2,0,1526817148,,"set colorcolumn"
+:comm
+|2,0,1526816851,,"comm"
+:415
+<set highlight=8:SpecialKey,~:EndOfBuffer,@:NonText,d:Directory,e:ErrorMsg,i:IncSearch,l:Search,m:MoreMsg,M:ModeMsg,n:LineNr,N:CursorLineNr,r:Question,s:StatusLine,S:StatusLineNC,c:VertSplit,t:Title,v:Visual,V:VisualNOS,w:WarningMsg,W:WildMenu,f:Folded,F:FoldColumn,A:DiffAdd,C:DiffChange,D:DiffDelete,T:DiffText,>:SignColumn,-:Conceal,B:SpellBad,P:SpellCap,R:SpellRare,L:SpellLocal,+:Pmenu,=:PmenuSel,x:PmenuSbar
+|2,0,1526816617,,"set highlight=8:SpecialKey,~:EndOfBuffer,@:NonText,d:Directory,e:ErrorMsg,i:IncSearch,l:Search,m:MoreMsg,M:ModeMsg,n:LineNr,N:CursorLineNr,r:Question,s:StatusLine,S:StatusLineNC,c:VertSplit,t:Title,v:Visual,V:VisualNOS,w:WarningMsg,W:WildMenu,f:Folded,F:FoldColumn,A:DiffAdd,C:DiffChange,D:DiffDelete,T:DiffText,>:SignColumn,-:Conceal,B:SpellBad,P:SpellCap,R:SpellRare,L:SpellLocal,+:Pmenu,=:PmenuSel,x:PmenuSbar"
+:set highlight
+|2,0,1526816607,,"set highlight"
+:colorscheme candy
+|2,0,1526816462,,"colorscheme candy"
+:tabNext
+|2,0,1526816214,,"tabNext"
+:tabnew
+|2,0,1526816183,,"tabnew"
+:tab
+|2,0,1526816137,,"tab"
+:tablast
+|2,0,1526816126,,"tablast"
+:colorscheme molokai
+|2,0,1526815347,,"colorscheme molokai"
+:set 
+|2,0,1526814563,,"set "
+:set uu
+|2,0,1526814524,,"set uu"
+:set bg=light
+|2,0,1526814514,,"set bg=light"
+:hi Comment ctermfg=gray
+|2,0,1526814487,,"hi Comment ctermfg=gray"
+:hi Comment #ffffff
+|2,0,1526814430,,"hi Comment #ffffff"
+:hi Comment #fffffff
+|2,0,1526814428,,"hi Comment #fffffff"
+:hi Comment white
+|2,0,1526814422,,"hi Comment white"
+:hi Comment ctermfg=white
+|2,0,1526814414,,"hi Comment ctermfg=white"
+:hl Comment ctermfg=gray
+|2,0,1526814371,,"hl Comment ctermfg=gray"
+:colorscheme tolerable
+|2,0,1526814178,,"colorscheme tolerable"
+:colorscheme hybrid
+|2,0,1526814070,,"colorscheme hybrid"
+:colorscheme twilight
+|2,0,1526814019,,"colorscheme twilight"
+:colorscheme hyb
+|2,0,1526814008,,"colorscheme hyb"
+:colorscheme lucius
+|2,0,1526813998,,"colorscheme lucius"
+:colorscheme hy
+|2,0,1526813994,,"colorscheme hy"
+:colorscheme gruvbox
+|2,0,1526813864,,"colorscheme gruvbox"
+:colorscheme goodwolf
+|2,0,1526813814,,"colorscheme goodwolf"
+:colorscheme badwolf
+|2,0,1526813586,,"colorscheme badwolf"
+:set magic
+|2,0,1526812575,,"set magic"
+:set s:molkai_original=1
+|2,0,1526812569,,"set s:molkai_original=1"
+:colorscheme inkpot
+|2,0,1526811734,,"colorscheme inkpot"
+:colorscheme vividchalk
+|2,0,1526811711,,"colorscheme vividchalk"
+:colorscheme elflord
+|2,0,1526811618,,"colorscheme elflord"
+:set background=light
+|2,0,1526811555,,"set background=light"
+:set background=dark
+|2,0,1526811526,,"set background=dark"
+:colorscheme solarized
+|2,0,1526811473,,"colorscheme solarized"
+:colorscheme candycode
+|2,0,1526811079,,"colorscheme candycode"
+:colorscheme 
+|2,0,1526811074,,"colorscheme "
+:colorscheme wombat
+|2,0,1526810988,,"colorscheme wombat"
+:colorscheme railscasts2
+|2,0,1526810955,,"colorscheme railscasts2"
+:colorscheme railscasts
+|2,0,1526810938,,"colorscheme railscasts"
+:colorscheme desert
+|2,0,1526810790,,"colorscheme desert"
+:colorscheme delek
+|2,0,1526810243,,"colorscheme delek"
+:colorscheme darkblue
+|2,0,1526810225,,"colorscheme darkblue"
+:colorscheme borland
+|2,0,1526809739,,"colorscheme borland"
+:colorscheme camo
+|2,0,1526809710,,"colorscheme camo"
+:colorscheme breeze
+|2,0,1526809677,,"colorscheme breeze"
+:colorscheme NightScape
+|2,0,1526809438,,"colorscheme NightScape"
+:q
+|2,0,1526809228,,"q"
+:q!
+|2,0,1526809224,,"q!"
+:1
+|2,0,1526809218,,"1"
+:colorscheme palenight
+|2,0,1526807991,,"colorscheme palenight"
+:colorscheme autumn2
+|2,0,1526807987,,"colorscheme autumn2"
+:colorscheme ayu
+|2,0,1526807777,,"colorscheme ayu"
+:co
+|2,0,1526807496,,"co"
+:colorscheme wombat256
+|2,0,1526807115,,"colorscheme wombat256"
+:colorscheme jellybeans
+|2,0,1526806760,,"colorscheme jellybeans"
+:colorscheme calmar256-dark
+|2,0,1526806565,,"colorscheme calmar256-dark"
+:colorscheme dante
+|2,0,1526806523,,"colorscheme dante"
+:colorscheme desertEx
+|2,0,1526806478,,"colorscheme desertEx"
+:colorscheme desert256
+|2,0,1526806474,,"colorscheme desert256"
+:colorscheme zenburn
+|2,0,1526806436,,"colorscheme zenburn"
+:no
+|2,0,1526805740,,"no"
+:jk
+|2,0,1526805731,,"jk"
+:no/vv
+|2,0,1526805535,,"no/vv"
+:colorscheme neon
+|2,0,1526805189,,"colorscheme neon"
+:colorscheme soso
+|2,0,1526805096,,"colorscheme soso"
+:Denite colorscheme
+|2,0,1526804232,,"Denite colorscheme"
+:colorscheme baycom
+|2,0,1526803478,,"colorscheme baycom"
+:f
+|2,0,1526803054,,"f"
+:vim function ~/*
+|2,0,1526802596,,"vim function ~/*"
+:help denite
+|2,0,1526800555,,"help denite"
+:echo stridx(%, "/|[^ |]\+|")[
+|2,0,1526789827,,"echo stridx(%, \"/|[^ |]\\+|\")["
+:echo stridx(%, "/|[^ |]\+|")
+|2,0,1526789801,,"echo stridx(%, \"/|[^ |]\\+|\")"
+:echo stridx(%, /|[^ |]\+|)
+|2,0,1526789782,,"echo stridx(%, /|[^ |]\\+|)"
+:echo strlen("Ç‚ÇÁÇ»Ç¢Ç©")
+|2,0,1526788737,,"echo strlen(\"Ç‚ÇÁÇ»Ç¢Ç©\")"
+:echo strlen("aaa")
+|2,0,1526788727,,"echo strlen(\"aaa\")"
+:echo strlen
+|2,0,1526788705,,"echo strlen"
+:echo strlen aaa
+|2,0,1526788702,,"echo strlen aaa"
+:w1
+|2,0,1526788173,,"w1"
+:s!
+|2,0,1526787566,,"s!"
+:s
+|2,0,1526787557,,"s"
+:/
+|2,0,1526783187,,"/"
+:/j
+|2,0,1526783184,,"/j"
+:Denite file_mru
+|2,0,1526783128,,"Denite file_mru"
 :Denite y
 |2,0,1526425748,,"Denite y"
 :Denite neoyank
 |2,0,1526425735,,"Denite neoyank"
-:Denite file_mru
-|2,0,1526425717,,"Denite file_mru"
 :Denite -cursor-pos=3 file/old
 |2,0,1526425293,,"Denite -cursor-pos=3 file/old"
 :Denite -cursor-pos=10 file/old
@@ -40,24 +225,10 @@ $\/
 |2,0,1526425257,,"Denite -cursor-pos=10"
 :Denite -cursor-pos=
 |2,0,1526425250,,"Denite -cursor-pos="
-:colorscheme candy
-|2,0,1526424898,,"colorscheme candy"
-:colorscheme neon
-|2,0,1526424738,,"colorscheme neon"
 :colorscheme dusk
 |2,0,1526424723,,"colorscheme dusk"
 :colorscheme morning
 |2,0,1526424693,,"colorscheme morning"
-:colorscheme desert
-|2,0,1526424660,,"colorscheme desert"
-:colorscheme desert256
-|2,0,1526424637,,"colorscheme desert256"
-:colorscheme NightScape
-|2,0,1526424444,,"colorscheme NightScape"
-:colorscheme
-|2,0,1526424425,,"colorscheme"
-:colorscheme zenburn
-|2,0,1526424396,,"colorscheme zenburn"
 :Denite  file/rec
 |2,0,1526402989,,"Denite  file/rec"
 :Denite 
@@ -70,8 +241,6 @@ $\/
 |2,0,1526402684,,"denite buffer"
 :read !ls ~/
 |2,0,1526395163,,"read !ls ~/"
-:enew
-|2,0,1526395160,,"enew"
 :gg
 |2,0,1526395138,,"gg"
 :set fenc=cp932
@@ -86,18 +255,10 @@ $\/
 |2,0,1526393610,,"color"
 :set fileencoding=cp932
 |2,0,1526393250,,"set fileencoding=cp932"
-:w
-|2,0,1526392417,,"w"
 :NetUserPa
 |2,0,1526391897,,"NetUserPa"
 :verbose map
 |2,0,1526368406,,"verbose map"
-:map
-|2,0,1526368329,,"map"
-:help denite
-|2,0,1526368273,,"help denite"
-:noh
-|2,0,1526368247,,"noh"
 :a[^ ]\+
 |2,0,1525769982,,"a[^ ]\\+"
 :h
@@ -114,8 +275,6 @@ $\/
 |2,0,1525769481,,"let @z='/|[^ ]\\+|<CR>'"
 :let @z=/|[^ ]\+|<CR>
 |2,0,1525769462,,"let @z=/|[^ ]\\+|<CR>"
-:/
-|2,0,1525769201,,"/"
 :oooaoaaoaaÅÄaoÅÄaoÅÄaoÅÄaoÅÄaoÅÄao
 |2,0,1525769169,,"oooaoaaoaaÅÄaoÅÄaoÅÄaoÅÄaoÅÄaoÅÄao"
 :/set
@@ -134,8 +293,6 @@ $\/
 |2,0,1525763530,,"w!;"
 :source%
 |2,0,1525763340,,"source%"
-:s
-|2,0,1525763339,,"s"
 :verb map
 |2,0,1525763268,,"verb map"
 :<F2>
@@ -168,8 +325,6 @@ $\/
 |2,0,1525615877,,"'<,'>m"
 :n
 |2,0,1525615863,,"n"
-:w1
-|2,0,1525614966,,"w1"
 :help<F2><F2>
 |2,0,1525614907,,"help<F2><F2>"
 :help :Deni
@@ -210,8 +365,6 @@ $\/
 |2,0,1525602010,,"Denite file_old"
 :echo has('python3')
 |2,0,1525594148,,"echo has('python3')"
-:Denite colorscheme
-|2,0,1525594122,,"Denite colorscheme"
 :\Home2\.vimrc
 |2,0,1525593567,,"\\Home2\\.vimrc"
 :De
@@ -302,8 +455,6 @@ $\/
 |2,0,1525446232,,"cd $home"
 :Renamer
 |2,0,1525444064,,"Renamer"
-:q
-|2,0,1525449189,,"q"
 :close
 |2,0,1525449184,,"close"
 :Ren
@@ -364,8 +515,6 @@ $\/
 |2,0,1525431204,,"set fenc?"
 :Explore
 |2,0,1525430841,,"Explore"
-:s!
-|2,0,1525429188,,"s!"
 :read !go help
 |2,0,1525428459,,"read !go help"
 :read !go /?
@@ -466,8 +615,6 @@ $\/
 |2,0,1525419697,,"set ++enc=utf-8"
 :set ++ecn=utf-8
 |2,0,1525419691,,"set ++ecn=utf-8"
-:q!
-|2,0,1525419980,,"q!"
 :set fenc=csp932
 |2,0,1525418498,,"set fenc=csp932"
 :echo len('Ç†')_gvimrc_gvimrc_gvimrcgg_gvimrc
@@ -494,8 +641,6 @@ $\/
 |2,0,1525416450,,"k"
 :set enc
 |2,0,1525416303,,"set enc"
-:colorscheme candycode
-|2,0,1525416171,,"colorscheme candycode"
 :enc
 |2,0,1525416011,,"enc"
 :set fileencodings=iso-2022-jp,iso-2022-jp-2,utf-8,euc-jp,sjis
@@ -522,8 +667,6 @@ $\/
 |2,0,1525414015,,"echo &compatible"
 :&compatible
 |2,0,1525414000,,"&compatible"
-:1
-|2,0,1525409268,,"1"
 :e!
 |2,0,1525408906,,"e!"
 :read !go
@@ -614,10 +757,46 @@ $\/
 |2,0,1525363320,,"e ~/vimfiles/"
 
 # åüçıï∂éöóÒ çÄñ⁄ÇÃóöó (êVÇµÇ¢Ç‡ÇÃÇ©ÇÁå√Ç¢Ç‡ÇÃÇ÷):
+?/ime
+|2,1,1526821847,47,"ime"
+?/imse
+|2,1,1526820800,47,"imse"
+?/im
+|2,1,1526820699,47,"im"
+?/Comment
+|2,1,1526820196,47,"Comment"
+?/molokai
+|2,1,1526819971,47,"molokai"
+?/777
+|2,1,1526818323,47,"777"
+?/v
+|2,1,1526817892,47,"v"
+?/comment
+|2,1,1526817322,47,"comment"
+?/deol
+|2,1,1526815395,47,"deol"
+?/f
+|2,1,1526813884,47,"f"
+?/ctemfg//n
+|2,1,1526812427,47,"ctemfg//n"
+? a
+|2,1,1526809370,,"a"
+?/num
+|2,1,1526808979,47,"num"
+?/b
+|2,1,1526803112,47,"b"
+?/insert
+|2,1,1526798082,47,"insert"
+?/"kkkkkkkkk
+|2,1,1526788555,47,"\"kkkkkkkkk"
+?/'
+|2,1,1526788523,47,"'"
+?/|[^ |]\+|
+|2,1,1526783511,47,"|[^ |]\\+|"
+?/|[^ |]\+|=/
+|2,1,1526783454,47,"|[^ |]\\+|=/"
 ?/col
 |2,1,1526425049,47,"col"
-?/b
-|2,1,1526402874,47,"b"
 ?/c-v
 |2,1,1526402858,47,"c-v"
 ?/C-v
@@ -630,8 +809,6 @@ $\/
 |2,1,1526393790,47,"gui"
 ?/colr
 |2,1,1526393615,47,"colr"
-?/|[^ |]\+|
-|2,1,1526392456,47,"|[^ |]\\+|"
 ?/set win
 |2,1,1526392396,47,"set win"
 ?/c-j
@@ -816,14 +993,28 @@ $\/
 # éÆ çÄñ⁄ÇÃóöó (êVÇµÇ¢Ç‡ÇÃÇ©ÇÁå√Ç¢Ç‡ÇÃÇ÷):
 
 # ì¸óÕçs çÄñ⁄ÇÃóöó (êVÇµÇ¢Ç‡ÇÃÇ©ÇÁå√Ç¢Ç‡ÇÃÇ÷):
+@
+|2,3,1526814080,,""
+@
+|2,3,1526813876,,""
+@
+|2,3,1526811111,,""
+@
+|2,3,1526811086,,""
+@o
+|2,3,1526810230,,"o"
+@jj
+|2,3,1526805764,,"jj"
+@j
+|2,3,1526804191,,"j"
+@k
+|2,3,1526803051,,"k"
 @q
 |2,3,1526425035,,"q"
 @append
 |2,3,1526425019,,"append"
 @c
 |2,3,1526424618,,"c"
-@jj
-|2,3,1526424582,,"jj"
 @open
 |2,3,1526424572,,"open"
 @:
@@ -836,8 +1027,6 @@ $\/
 |2,3,1526402936,,"3"
 @kk
 |2,3,1526402928,,"kk"
-@
-|2,3,1526402926,,""
 @g
 |2,3,1526402918,,"g"
 @C
@@ -874,495 +1063,394 @@ $\/
 # ÉfÉoÉbÉOçs çÄñ⁄ÇÃóöó (êVÇµÇ¢Ç‡ÇÃÇ©ÇÁå√Ç¢Ç‡ÇÃÇ÷):
 
 # ÉåÉWÉXÉ^:
-"0	LINE	0
-	nnoremap <M-V> :e ~/_gvimrc<CR>
-|3,0,0,1,1,0,1526425861,"nnoremap <M-V> :e ~/_gvimrc<CR>"
-"1	CHAR	0
-	set encoding=cp932
-	"scriptencoding utf-8
-	scriptencoding cp932
+"0	CHAR	0
+	<C-[>
+|3,0,0,0,1,0,1526823322,"<C-[>"
+""1	CHAR	0
 	
 	
-|3,0,1,0,5,0,1526394828,"set encoding=cp932","\"scriptencoding utf-8","scriptencoding cp932","",""
+|3,1,1,0,2,0,1526823554,"",""
 "2	LINE	0
-	set encoding=cp932
-|3,0,2,1,1,0,1526394776,"set encoding=cp932"
+	
+|3,0,2,1,1,0,1526823512,""
 "3	CHAR	0
 	
-	" ÉcÅ[ÉãÉoÅ[ÇÃï\é¶/îÒï\é¶
-	nnoremap <silent><F4> :call ToggleGuiOptions('T')<CR>
-	"ÉÅÉjÉÖÅ[ÉoÅ[ÇÃï\é¶/îÒï\é¶
-	nnoremap <silent><F3>  :call ToggleGuiOptions('m')<CR>
+	"IMÇÃìÆçÏ
+	
+	inoremap <ESC>  <ESC>:set iminsert=0<CR>
+	inoremap <C-[>  <C-[>:set iminsert=0<CR>
 	
 	
-|3,0,3,0,7,0,1526394215,"","\" ÉcÅ[ÉãÉoÅ[ÇÃï\\é¶/îÒï\\é¶","nnoremap <silent><F4> :call ToggleGuiOptions('T')<CR>","\"ÉÅÉjÉÖÅ[ÉoÅ[ÇÃï\\é¶/îÒï\\é¶","nnoremap <silent><F3>  :call ToggleGuiOptions('m')<CR>","",""
+|3,0,3,0,7,0,1526823489,"","\"IMÇÃìÆçÏ","","inoremap <ESC>  <ESC>:set iminsert=0<CR>","inoremap <C-[>  <C-[>:set iminsert=0<CR>","",""
 "4	LINE	0
-	set winaltkeys=no 
-|3,0,4,1,1,0,1526394083,"set winaltkeys=no "
+	"set imdisable
+|3,0,4,1,1,0,1526823484,"\"set imdisable"
 "5	LINE	0
+	set iminsert=1 imsearch=1
+|3,0,5,1,1,0,1526823455,"set iminsert=1 imsearch=1"
+"6	CHAR	0
+	Ç¢ÇÜÇìÇÑÇÜÇÑÇì
+	irerweÇÜÇìÇÜÇìÇÑÇÜ
+	ÇÜÇìÇÑÇÜÇìÇÑÇÜÇì
+	ÇÜÇìÇÑÇÜÇìÇÑ
+	ÇÜÇìÇÑÇÜÇìÇÑ
 	
-|3,0,5,1,1,0,1526392859,""
-"6	LINE	0
-	nnoremap <C-S-j>  @z<CR>
-|3,0,6,1,1,0,1526392615,"nnoremap <C-S-j>  @z<CR>"
+	
+|3,0,6,0,7,0,1526823056,"Ç¢ÇÜÇìÇÑÇÜÇÑÇì","irerweÇÜÇìÇÜÇìÇÑÇÜ","ÇÜÇìÇÑÇÜÇìÇÑÇÜÇì","ÇÜÇìÇÑÇÜÇìÇÑ","ÇÜÇìÇÑÇÜÇìÇÑ","",""
 "7	LINE	0
-	let @z='/|[^ |]\+|'
-|3,0,7,1,1,0,1526392507,"let @z='/|[^ |]\\+|'"
+	ÇÜÇÑÇìÇÜÇìÇÑÇÜÇìÇÑÇÜÇÑÇìo
+|3,0,7,1,1,0,1526822883,"ÇÜÇÑÇìÇÜÇìÇÑÇÜÇìÇÑÇÜÇÑÇìo"
 "8	LINE	0
-	nnoremap ? :<C-u>set ignorecase smartcase<CR>?
-|3,0,8,1,1,0,1525765615,"nnoremap ? :<C-u>set ignorecase smartcase<CR>?"
+	fsdfÇÜÇÑÇìÇÜÇÑÇìÇÜÇìÇÜÇÑ
+|3,0,8,1,1,0,1526822741,"fsdfÇÜÇÑÇìÇÜÇÑÇìÇÜÇìÇÜÇÑ"
 "9	LINE	0
-	nnoremap / :<C-u>set ignorecase smartcase<CR>/
-|3,0,9,1,1,0,1525765615,"nnoremap / :<C-u>set ignorecase smartcase<CR>/"
+	ÇìÇÜÇìÇÑÇÜÇìsfsdfsdfÇÑ
+|3,0,9,1,1,0,1526822741,"ÇìÇÜÇìÇÑÇÜÇìsfsdfsdfÇÑ"
+"e	CHAR	0
+	eeeeeeeeeeeeeeeeeeeeeeeeee
+|3,0,14,0,1,0,1526807951,"eeeeeeeeeeeeeeeeeeeeeeeeee"
 "j	CHAR	0
-	jjjjjjkkkkkkj
-|3,0,19,0,1,0,1525363341,"jjjjjjkkkkkkj"
+	
+|3,0,19,0,1,0,1526809755,""
 "q	CHAR	0
-	qjiÄ¸bÄ¸bÄ¸fjjjjkkkkjjjjjkjkjkjkkkkjjjj		ikÄkbÄ¸gÄ¸gqÄ¸gj
-|3,0,26,0,1,0,1526425037,"qjiÄ¸bÄ¸bÄ¸fjjjjkkkkjjjjjkjkjkjkkkkjjjj		ikÄkbÄ¸gÄ¸gqÄ¸gj"
-"z@	CHAR	0
+	jerrrjkr332r23r3243242kjj32kl 23i32i9sdjfsdkjlfsdfsdsdflksdflkasdlkfsddjjjjjjjjjjjjjjjjjjjjjjjjlkjwe3r4324423jlj2lj3k4lsjdfkslfjsdlkjfsdlfjs;dfdsÄ˝,Ä˝.qÄ˝,Ä˝.tptcoiioqwerwrweqdfs
+|3,0,26,0,1,0,1526817218,"jerrrjkr332r23r3243242kjj32kl 23i32i9sdjfsdkjlfsdfsdsdflksdflkasdlkfsddjjjjjjjjjjjjjjjjjjjjjjjjlkjwe3r4324423jlj2lj3k4lsjdfkslfjsdlkjfsdlfjs;dfdsÄ˝,Ä˝.qÄ˝,Ä˝.tptcoiioqwerwrweqdfs"
+"z	CHAR	0
 	/|[^ |]\+|
-|3,2,35,0,1,0,1526368188,"/|[^ |]\\+|"
-""-	CHAR	0
-	c
-|3,1,36,0,1,0,1526425868,"c"
+|3,0,35,0,1,0,1526368188,"/|[^ |]\\+|"
+"-	CHAR	0
+	:
+|3,0,36,0,1,0,1526823335,":"
 
 # ÉtÉ@ÉCÉãÉ}Å[ÉN:
-'M  99  4  ~/.vimrc
-|4,77,99,4,1525401015,"~/.vimrc"
-'0  40  22  ~/.vimrc
-|4,48,40,22,1526425878,"~/.vimrc"
-'1  71  17  ~/_gvimrc
-|4,49,71,17,1526425077,"~/_gvimrc"
-'2  39  21  ~/.vimrc
-|4,50,39,21,1526424971,"~/.vimrc"
-'3  39  21  ~/.vimrc
-|4,51,39,21,1526424971,"~/.vimrc"
-'4  56  16  ~/.vimrc
-|4,52,56,16,1526402865,"~/.vimrc"
-'5  55  16  ~/.vimrc
-|4,53,55,16,1526402865,"~/.vimrc"
-'6  51  16  ~/.vimrc
-|4,54,51,16,1526402865,"~/.vimrc"
-'7  50  16  ~/.vimrc
-|4,55,50,16,1526402865,"~/.vimrc"
-'8  56  30  ~/.vimrc
-|4,56,56,30,1526402778,"~/.vimrc"
-'9  55  30  ~/.vimrc
-|4,57,55,30,1526402778,"~/.vimrc"
+'M  98  4  ~/.vimrc
+|4,77,98,4,1525401015,"~/.vimrc"
+'0  53  0  ~/.vimrc
+|4,48,53,0,1526823599,"~/.vimrc"
+'1  48  0  ~/.vimrc
+|4,49,48,0,1526822890,"~/.vimrc"
+'2  48  0  ~/.vimrc
+|4,50,48,0,1526822890,"~/.vimrc"
+'3  81  0  ~/_gvimrc
+|4,51,81,0,1526821504,"~/_gvimrc"
+'4  81  0  ~/_gvimrc
+|4,52,81,0,1526821504,"~/_gvimrc"
+'5  81  0  ~/_gvimrc
+|4,53,81,0,1526821258,"~/_gvimrc"
+'6  81  0  ~/_gvimrc
+|4,54,81,0,1526821258,"~/_gvimrc"
+'7  83  0  ~/_gvimrc
+|4,55,83,0,1526821258,"~/_gvimrc"
+'8  83  0  ~/_gvimrc
+|4,56,83,0,1526821258,"~/_gvimrc"
+'9  82  0  ~/_gvimrc
+|4,57,82,0,1526821166,"~/_gvimrc"
 
 # ÉWÉÉÉìÉvÉäÉXÉg (êVÇµÇ¢Ç‡ÇÃÇ™êÊ):
--'  40  22  ~/.vimrc
-|4,39,40,22,1526425878,"~/.vimrc"
+-'  53  0  ~/.vimrc
+|4,39,53,0,1526823599,"~/.vimrc"
 -'  1  0  ~/.vimrc
-|4,39,1,0,1526425758,"~/.vimrc"
--'  28  10  ~/.vim/rc/dein.toml
-|4,39,28,10,1526425681,"~/.vim/rc/dein.toml"
--'  28  10  ~/.vim/rc/dein.toml
-|4,39,28,10,1526425681,"~/.vim/rc/dein.toml"
--'  27  0  ~/.vim/rc/dein.toml
-|4,39,27,0,1526425569,"~/.vim/rc/dein.toml"
--'  27  0  ~/.vim/rc/dein.toml
-|4,39,27,0,1526425569,"~/.vim/rc/dein.toml"
--'  11  1  ~/.vim/rc/dein.toml
-|4,39,11,1,1526425547,"~/.vim/rc/dein.toml"
--'  11  1  ~/.vim/rc/dein.toml
-|4,39,11,1,1526425547,"~/.vim/rc/dein.toml"
--'  17  0  ~/.vim/rc/dein.toml
-|4,39,17,0,1526425508,"~/.vim/rc/dein.toml"
--'  1  0  ~/.cache/dein/cache_gvim
-|4,39,1,0,1526425508,"~/.cache/dein/cache_gvim"
--'  17  0  ~/.vim/rc/dein.toml
-|4,39,17,0,1526425508,"~/.vim/rc/dein.toml"
--'  1  0  ~/.cache/dein/cache_gvim
-|4,39,1,0,1526425508,"~/.cache/dein/cache_gvim"
--'  71  17  ~/_gvimrc
-|4,39,71,17,1526425077,"~/_gvimrc"
--'  71  17  ~/_gvimrc
-|4,39,71,17,1526425077,"~/_gvimrc"
--'  71  17  ~/_gvimrc
-|4,39,71,17,1526425077,"~/_gvimrc"
--'  71  17  ~/_gvimrc
-|4,39,71,17,1526425077,"~/_gvimrc"
--'  29  0  ~/_gvimrc
-|4,39,29,0,1526425049,"~/_gvimrc"
--'  29  0  ~/_gvimrc
-|4,39,29,0,1526425049,"~/_gvimrc"
--'  29  0  ~/_gvimrc
-|4,39,29,0,1526425049,"~/_gvimrc"
--'  29  0  ~/_gvimrc
-|4,39,29,0,1526425049,"~/_gvimrc"
--'  39  21  ~/.vimrc
-|4,39,39,21,1526424971,"~/.vimrc"
--'  39  21  ~/.vimrc
-|4,39,39,21,1526424971,"~/.vimrc"
--'  39  21  ~/.vimrc
-|4,39,39,21,1526424971,"~/.vimrc"
--'  39  21  ~/.vimrc
-|4,39,39,21,1526424971,"~/.vimrc"
--'  39  21  ~/.vimrc
-|4,39,39,21,1526424971,"~/.vimrc"
--'  208  0  ~/.vimrc
-|4,39,208,0,1526424650,"~/.vimrc"
--'  202  0  ~/.vimrc
-|4,39,202,0,1526424650,"~/.vimrc"
--'  202  0  ~/.vimrc
-|4,39,202,0,1526424650,"~/.vimrc"
--'  202  0  ~/.vimrc
-|4,39,202,0,1526424650,"~/.vimrc"
--'  202  0  ~/.vimrc
-|4,39,202,0,1526424650,"~/.vimrc"
--'  204  0  ~/.vimrc
-|4,39,204,0,1526424456,"~/.vimrc"
--'  198  0  ~/.vimrc
-|4,39,198,0,1526424456,"~/.vimrc"
--'  198  0  ~/.vimrc
-|4,39,198,0,1526424456,"~/.vimrc"
--'  198  0  ~/.vimrc
-|4,39,198,0,1526424456,"~/.vimrc"
--'  198  0  ~/.vimrc
-|4,39,198,0,1526424456,"~/.vimrc"
--'  2  0  I:/home/_gvimrc
-|4,39,2,0,1526424406,"I:/home/_gvimrc"
--'  2  0  I:/home/_gvimrc
-|4,39,2,0,1526424406,"I:/home/_gvimrc"
--'  2  0  I:/home/_gvimrc
-|4,39,2,0,1526424406,"I:/home/_gvimrc"
--'  2  0  I:/home/_gvimrc
-|4,39,2,0,1526424406,"I:/home/_gvimrc"
--'  2  0  I:/home/_gvimrc
-|4,39,2,0,1526424406,"I:/home/_gvimrc"
--'  2  0  I:/home/_gvimrc
-|4,39,2,0,1526424406,"I:/home/_gvimrc"
--'  2  0  I:/home/_gvimrc
-|4,39,2,0,1526424406,"I:/home/_gvimrc"
--'  2  0  I:/home/_gvimrc
-|4,39,2,0,1526424406,"I:/home/_gvimrc"
--'  56  16  ~/.vimrc
-|4,39,56,16,1526402918,"~/.vimrc"
--'  51  16  ~/.vimrc
-|4,39,51,16,1526402918,"~/.vimrc"
--'  51  16  ~/.vimrc
-|4,39,51,16,1526402918,"~/.vimrc"
--'  51  16  ~/.vimrc
-|4,39,51,16,1526402918,"~/.vimrc"
--'  51  16  ~/.vimrc
-|4,39,51,16,1526402918,"~/.vimrc"
--'  117  1  I:/home/.vimrc
-|4,39,117,1,1526402910,"I:/home/.vimrc"
--'  117  1  I:/home/.vimrc
-|4,39,117,1,1526402910,"I:/home/.vimrc"
--'  117  1  I:/home/.vimrc
-|4,39,117,1,1526402910,"I:/home/.vimrc"
--'  117  1  I:/home/.vimrc
-|4,39,117,1,1526402910,"I:/home/.vimrc"
--'  117  1  I:/home/.vimrc
-|4,39,117,1,1526402910,"I:/home/.vimrc"
--'  117  1  I:/home/.vimrc
-|4,39,117,1,1526402910,"I:/home/.vimrc"
--'  117  1  I:/home/.vimrc
-|4,39,117,1,1526402910,"I:/home/.vimrc"
--'  117  1  I:/home/.vimrc
-|4,39,117,1,1526402910,"I:/home/.vimrc"
--'  14  34  I:/home/_gvimrc
-|4,39,14,34,1526402888,"I:/home/_gvimrc"
--'  14  34  I:/home/_gvimrc
-|4,39,14,34,1526402888,"I:/home/_gvimrc"
--'  14  34  I:/home/_gvimrc
-|4,39,14,34,1526402888,"I:/home/_gvimrc"
--'  14  34  I:/home/_gvimrc
-|4,39,14,34,1526402888,"I:/home/_gvimrc"
--'  14  34  I:/home/_gvimrc
-|4,39,14,34,1526402888,"I:/home/_gvimrc"
--'  14  34  I:/home/_gvimrc
-|4,39,14,34,1526402888,"I:/home/_gvimrc"
--'  14  34  I:/home/_gvimrc
-|4,39,14,34,1526402888,"I:/home/_gvimrc"
--'  14  34  I:/home/_gvimrc
-|4,39,14,34,1526402888,"I:/home/_gvimrc"
--'  1  0  I:/home/_gvimrc
-|4,39,1,0,1526402887,"I:/home/_gvimrc"
--'  1  0  I:/home/_gvimrc
-|4,39,1,0,1526402887,"I:/home/_gvimrc"
--'  1  0  I:/home/_gvimrc
-|4,39,1,0,1526402887,"I:/home/_gvimrc"
--'  1  0  I:/home/_gvimrc
-|4,39,1,0,1526402887,"I:/home/_gvimrc"
--'  1  0  I:/home/_gvimrc
-|4,39,1,0,1526402887,"I:/home/_gvimrc"
--'  1  0  I:/home/_gvimrc
-|4,39,1,0,1526402887,"I:/home/_gvimrc"
--'  1  0  I:/home/_gvimrc
-|4,39,1,0,1526402887,"I:/home/_gvimrc"
--'  1  0  I:/home/_gvimrc
-|4,39,1,0,1526402887,"I:/home/_gvimrc"
--'  55  16  ~/.vimrc
-|4,39,55,16,1526402865,"~/.vimrc"
--'  50  16  ~/.vimrc
-|4,39,50,16,1526402865,"~/.vimrc"
--'  50  16  ~/.vimrc
-|4,39,50,16,1526402865,"~/.vimrc"
--'  50  16  ~/.vimrc
-|4,39,50,16,1526402865,"~/.vimrc"
--'  50  16  ~/.vimrc
-|4,39,50,16,1526402865,"~/.vimrc"
--'  53  16  ~/.vimrc
-|4,39,53,16,1526402847,"~/.vimrc"
--'  50  16  ~/.vimrc
-|4,39,50,16,1526402847,"~/.vimrc"
--'  49  16  ~/.vimrc
-|4,39,49,16,1526402847,"~/.vimrc"
--'  50  16  ~/.vimrc
-|4,39,50,16,1526402847,"~/.vimrc"
--'  49  16  ~/.vimrc
-|4,39,49,16,1526402847,"~/.vimrc"
--'  50  16  ~/.vimrc
-|4,39,50,16,1526402847,"~/.vimrc"
--'  49  16  ~/.vimrc
-|4,39,49,16,1526402847,"~/.vimrc"
--'  50  16  ~/.vimrc
-|4,39,50,16,1526402847,"~/.vimrc"
--'  49  16  ~/.vimrc
-|4,39,49,16,1526402847,"~/.vimrc"
--'  52  0  ~/.vimrc
-|4,39,52,0,1526402815,"~/.vimrc"
--'  49  0  ~/.vimrc
-|4,39,49,0,1526402815,"~/.vimrc"
+|4,39,1,0,1526823526,"~/.vimrc"
+-'  71  0  ~/.vimrc
+|4,39,71,0,1526823501,"~/.vimrc"
+-'  81  7  ~/_gvimrc
+|4,39,81,7,1526823369,"~/_gvimrc"
+-'  1  0  ~/_gvimrc
+|4,39,1,0,1526823208,"~/_gvimrc"
+-'  72  0  ~/.vimrc
+|4,39,72,0,1526823192,"~/.vimrc"
+-'  395  0  ~/.vimrc
+|4,39,395,0,1526823067,"~/.vimrc"
+-'  397  0  ~/.vimrc
+|4,39,397,0,1526823055,"~/.vimrc"
+-'  47  0  ~/.vimrc
+|4,39,47,0,1526822975,"~/.vimrc"
 -'  48  0  ~/.vimrc
-|4,39,48,0,1526402815,"~/.vimrc"
--'  49  0  ~/.vimrc
-|4,39,49,0,1526402815,"~/.vimrc"
+|4,39,48,0,1526822890,"~/.vimrc"
 -'  48  0  ~/.vimrc
-|4,39,48,0,1526402815,"~/.vimrc"
--'  49  0  ~/.vimrc
-|4,39,49,0,1526402815,"~/.vimrc"
--'  48  0  ~/.vimrc
-|4,39,48,0,1526402815,"~/.vimrc"
--'  49  0  ~/.vimrc
-|4,39,49,0,1526402815,"~/.vimrc"
--'  48  0  ~/.vimrc
-|4,39,48,0,1526402815,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1526402786,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1526402786,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1526402786,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1526402786,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1526402786,"~/.vimrc"
+|4,39,48,0,1526822890,"~/.vimrc"
+-'  428  0  I:/home/.vimrc
+|4,39,428,0,1526822766,"I:/home/.vimrc"
+-'  428  0  I:/home/.vimrc
+|4,39,428,0,1526822766,"I:/home/.vimrc"
+-'  429  0  I:/home/.vimrc
+|4,39,429,0,1526822751,"I:/home/.vimrc"
+-'  429  0  I:/home/.vimrc
+|4,39,429,0,1526822751,"I:/home/.vimrc"
+-'  407  0  I:/home/.vimrc
+|4,39,407,0,1526821874,"I:/home/.vimrc"
+-'  407  0  I:/home/.vimrc
+|4,39,407,0,1526821874,"I:/home/.vimrc"
+-'  13  18  I:/home/.vimrc
+|4,39,13,18,1526821855,"I:/home/.vimrc"
+-'  13  18  I:/home/.vimrc
+|4,39,13,18,1526821855,"I:/home/.vimrc"
+-'  265  28  I:/home/.vimrc
+|4,39,265,28,1526821854,"I:/home/.vimrc"
+-'  265  28  I:/home/.vimrc
+|4,39,265,28,1526821854,"I:/home/.vimrc"
+-'  242  9  I:/home/.vimrc
+|4,39,242,9,1526821853,"I:/home/.vimrc"
+-'  242  9  I:/home/.vimrc
+|4,39,242,9,1526821853,"I:/home/.vimrc"
+-'  241  15  I:/home/.vimrc
+|4,39,241,15,1526821852,"I:/home/.vimrc"
+-'  241  15  I:/home/.vimrc
+|4,39,241,15,1526821852,"I:/home/.vimrc"
+-'  84  0  I:/home/.vimrc
+|4,39,84,0,1526821847,"I:/home/.vimrc"
+-'  84  0  I:/home/.vimrc
+|4,39,84,0,1526821847,"I:/home/.vimrc"
+-'  79  6  I:/home/.vimrc
+|4,39,79,6,1526821840,"I:/home/.vimrc"
+-'  30  0  I:/home/_gvimrc
+|4,39,30,0,1526821840,"I:/home/_gvimrc"
+-'  79  6  I:/home/.vimrc
+|4,39,79,6,1526821840,"I:/home/.vimrc"
+-'  30  0  I:/home/_gvimrc
+|4,39,30,0,1526821840,"I:/home/_gvimrc"
+-'  2  0  I:/home/_gvimrc
+|4,39,2,0,1526821826,"I:/home/_gvimrc"
+-'  2  0  I:/home/_gvimrc
+|4,39,2,0,1526821826,"I:/home/_gvimrc"
+-'  81  0  ~/_gvimrc
+|4,39,81,0,1526821504,"~/_gvimrc"
+-'  81  0  ~/_gvimrc
+|4,39,81,0,1526821504,"~/_gvimrc"
+-'  392  0  ~/.vimrc
+|4,39,392,0,1526821491,"~/.vimrc"
+-'  391  0  ~/.vimrc
+|4,39,391,0,1526821491,"~/.vimrc"
+-'  67  0  ~/.vimrc
+|4,39,67,0,1526821490,"~/.vimrc"
+-'  66  0  ~/.vimrc
+|4,39,66,0,1526821490,"~/.vimrc"
+-'  61  0  ~/.vimrc
+|4,39,61,0,1526821490,"~/.vimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526821490,"~/.vimrc"
+-'  83  0  ~/_gvimrc
+|4,39,83,0,1526821258,"~/_gvimrc"
+-'  83  0  ~/_gvimrc
+|4,39,83,0,1526821258,"~/_gvimrc"
+-'  83  0  ~/_gvimrc
+|4,39,83,0,1526821258,"~/_gvimrc"
+-'  83  0  ~/_gvimrc
+|4,39,83,0,1526821258,"~/_gvimrc"
+-'  82  0  ~/_gvimrc
+|4,39,82,0,1526821166,"~/_gvimrc"
+-'  85  0  ~/_gvimrc
+|4,39,85,0,1526821166,"~/_gvimrc"
+-'  85  0  ~/_gvimrc
+|4,39,85,0,1526821166,"~/_gvimrc"
+-'  85  0  ~/_gvimrc
+|4,39,85,0,1526821166,"~/_gvimrc"
+-'  85  0  ~/_gvimrc
+|4,39,85,0,1526821166,"~/_gvimrc"
+-'  80  5  ~/_gvimrc
+|4,39,80,5,1526821028,"~/_gvimrc"
+-'  80  5  ~/_gvimrc
+|4,39,80,5,1526821028,"~/_gvimrc"
+-'  81  5  ~/_gvimrc
+|4,39,81,5,1526821028,"~/_gvimrc"
+-'  81  5  ~/_gvimrc
+|4,39,81,5,1526821028,"~/_gvimrc"
+-'  81  5  ~/_gvimrc
+|4,39,81,5,1526821028,"~/_gvimrc"
+-'  80  5  ~/_gvimrc
+|4,39,80,5,1526821028,"~/_gvimrc"
+-'  80  5  ~/_gvimrc
+|4,39,80,5,1526821028,"~/_gvimrc"
+-'  81  5  ~/_gvimrc
+|4,39,81,5,1526821028,"~/_gvimrc"
+-'  81  5  ~/_gvimrc
+|4,39,81,5,1526821028,"~/_gvimrc"
+-'  81  5  ~/_gvimrc
+|4,39,81,5,1526821028,"~/_gvimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526821004,"~/.vimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526821004,"~/.vimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526821004,"~/.vimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526821004,"~/.vimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526821004,"~/.vimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526821004,"~/.vimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526820950,"~/.vimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526820950,"~/.vimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526820950,"~/.vimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526820950,"~/.vimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526820950,"~/.vimrc"
+-'  60  0  ~/.vimrc
+|4,39,60,0,1526820950,"~/.vimrc"
+-'  69  14  ~/.vimrc
+|4,39,69,14,1526820946,"~/.vimrc"
+-'  68  14  ~/.vimrc
+|4,39,68,14,1526820946,"~/.vimrc"
+-'  63  14  ~/.vimrc
+|4,39,63,14,1526820946,"~/.vimrc"
+-'  62  14  ~/.vimrc
+|4,39,62,14,1526820946,"~/.vimrc"
+-'  62  14  ~/.vimrc
+|4,39,62,14,1526820946,"~/.vimrc"
+-'  62  14  ~/.vimrc
+|4,39,62,14,1526820946,"~/.vimrc"
+-'  62  14  ~/.vimrc
+|4,39,62,14,1526820946,"~/.vimrc"
+-'  62  14  ~/.vimrc
+|4,39,62,14,1526820946,"~/.vimrc"
+-'  62  14  ~/.vimrc
+|4,39,62,14,1526820946,"~/.vimrc"
+-'  62  14  ~/.vimrc
+|4,39,62,14,1526820946,"~/.vimrc"
+-'  65  57  ~/.vimrc
+|4,39,65,57,1526820773,"~/.vimrc"
+-'  64  57  ~/.vimrc
+|4,39,64,57,1526820773,"~/.vimrc"
+-'  59  57  ~/.vimrc
+|4,39,59,57,1526820773,"~/.vimrc"
+-'  58  57  ~/.vimrc
+|4,39,58,57,1526820773,"~/.vimrc"
+-'  58  57  ~/.vimrc
+|4,39,58,57,1526820773,"~/.vimrc"
+-'  58  57  ~/.vimrc
+|4,39,58,57,1526820773,"~/.vimrc"
+-'  58  57  ~/.vimrc
+|4,39,58,57,1526820773,"~/.vimrc"
+-'  58  57  ~/.vimrc
+|4,39,58,57,1526820773,"~/.vimrc"
+-'  58  57  ~/.vimrc
+|4,39,58,57,1526820773,"~/.vimrc"
+-'  58  57  ~/.vimrc
+|4,39,58,57,1526820773,"~/.vimrc"
+-'  58  57  ~/.vimrc
+|4,39,58,57,1526820773,"~/.vimrc"
+-'  58  57  ~/.vimrc
+|4,39,58,57,1526820773,"~/.vimrc"
+-'  58  57  ~/.vimrc
+|4,39,58,57,1526820773,"~/.vimrc"
+-'  58  57  ~/.vimrc
+|4,39,58,57,1526820773,"~/.vimrc"
 
 # ÉtÉ@ÉCÉãì‡É}Å[ÉNÇÃóöó (êVÇµÇ¢Ç‡ÇÃÇ©ÇÁå√Ç¢Ç‡ÇÃ):
 
 > ~/.vimrc
-	*	1526425873	0
-	"	40	22
-	^	40	23
-	.	40	22
-	+	48	28
-	+	36	12
-	+	46	0
-	+	34	4
-	+	48	15
-	+	34	1
-	+	36	1
-	+	48	6
-	+	36	6
-	+	48	6
-	+	70	0
-	+	29	21
-	+	32	0
+	*	1526823592	0
+	"	53	0
+	.	53	0
+	+	64	33
+	+	62	0
+	+	64	0
+	+	62	0
+	+	64	0
+	+	65	0
+	+	317	0
+	+	275	1
+	+	277	1
+	+	276	4
+	+	318	0
+	+	327	99
+	+	327	0
+	+	310	0
+	+	327	0
+	+	324	0
+	+	326	68
+	+	255	0
+	+	326	17
+	+	391	0
+	+	326	42
+	+	326	0
+	+	391	0
+	+	326	42
+	+	165	0
+	+	394	15
 	+	59	0
-	+	48	0
-	+	59	0
-	+	32	0
-	+	48	7
-	+	36	7
-	+	48	8
-	+	37	6
-	+	48	6
-	+	36	6
-	+	37	10
-	+	36	6
-	+	46	0
-	+	48	0
-	+	46	14
-	+	36	10
-	+	32	0
-	+	48	12
-	+	49	7
-	+	48	16
-	+	49	6
-	+	48	10
-	+	46	0
-	+	49	0
-	+	66	1
-	+	49	1
-	+	34	6
-	+	37	4
-	+	36	4
-	+	34	4
-	+	36	15
-	+	31	0
-	+	32	0
-	+	34	7
-	+	35	6
-	+	36	22
-	+	37	27
-	+	49	22
-	+	141	14
-	+	35	6
-	+	34	7
-	+	35	6
-	+	36	22
-	+	37	27
-	+	36	14
-	+	48	16
-	+	49	11
-	+	48	12
-	+	47	17
-	+	48	19
-	+	47	13
-	+	31	17
-	+	47	0
-	+	38	10
-	+	47	24
-	+	48	0
-	+	47	10
-	+	44	0
-	+	38	10
-	+	47	10
-	+	32	0
-	+	38	10
-	+	47	10
+	+	310	0
+	+	13	0
+	+	30	0
+	+	397	0
+	+	13	0
+	+	11	0
+	+	10	0
+	+	13	0
+	+	13	18
+	+	13	99
+	+	13	0
+	+	15	0
+	+	13	0
+	+	397	0
+	+	13	0
 	+	14	0
-	+	16	0
-	+	47	0
-	+	169	0
-	+	31	16
-	+	129	0
-	+	16	0
-	+	7	0
-	+	5	0
-	+	16	0
+	+	394	0
+	+	395	0
+	+	390	0
+	+	385	0
+	+	386	0
+	+	387	99
+	+	387	0
+	+	388	0
+	+	330	0
+	+	331	18
+	+	332	11
+	+	331	21
+	+	330	0
+	+	336	0
+	+	333	0
+	+	335	0
+	+	380	99
+	+	380	0
+	+	383	1
+	+	391	0
+	+	389	9
+	+	391	0
+	+	381	0
+	+	224	0
+	+	67	0
+	+	66	0
+	+	67	0
+	+	67	1
+	+	67	12
+	+	67	0
+	+	67	2
+	+	67	0
+	+	67	15
+	+	67	18
+	+	67	1
+	+	67	28
+	+	67	0
+	+	68	0
+	+	45	18
+	+	46	19
+	+	48	0
+	+	395	0
+	+	397	12
+	+	397	16
+	+	397	14
+	+	397	10
+	+	397	0
+	+	398	0
+	+	397	10
+	+	398	0
+	+	397	0
+	+	48	0
 	+	50	0
+	+	53	99
 	+	53	0
-	+	55	33
-	+	58	0
-	+	56	30
-	+	36	0
-	+	37	0
-	+	55	16
-	+	56	16
-	+	39	21
-	+	54	6
-	+	57	29
-	+	43	0
-	+	40	22
 	m	9	0
 
-> ~/vim80-kaoriya-win64/[denite]
-	*	1526425735	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/rc/dein.toml
-	*	1526425674	0
-	"	28	10
-	^	32	24
-	.	29	20
-	+	1	0
-	+	8	0
-	+	2	0
-	+	9	0
-	+	8	0
-	+	6	0
-	+	9	32
-	+	11	0
-	+	12	36
-	+	27	0
-	+	12	0
-	+	27	0
-	+	26	0
-	+	20	0
-	+	12	24
-	+	10	0
-	+	14	0
-	+	16	5
-	+	16	24
-	+	15	0
-	+	10	0
-	+	18	0
-	+	20	0
-	+	19	23
-	+	20	0
-	+	21	0
-	+	23	0
-	+	24	0
-	+	22	13
-	+	23	0
-	+	22	19
-	+	25	19
-	+	26	0
-	+	20	0
-	+	27	0
-	+	31	0
-	+	27	0
-	+	29	18
-	+	32	24
-	+	29	20
-
-> ~/.cache/dein/cache_gvim
-	*	1526425386	0
-	"	1	0
-
 > ~/_gvimrc
-	*	1526425072	0
-	"	71	17
-	.	70	0
-	+	26	0
-	+	25	32
-	+	26	32
-	+	26	31
-	+	26	0
-	+	34	0
-	+	69	0
-	+	70	0
-	+	26	0
-	+	63	0
-	+	64	0
-	+	66	0
-	+	26	0
-	+	62	0
-	+	63	0
-	+	17	10
-	+	15	13
-	+	17	10
-	+	78	0
-	+	78	5
-	+	78	0
-	+	26	0
-	+	79	0
-	+	26	0
-	+	1	0
-	+	14	0
-	+	1	0
-	+	14	0
-	+	13	20
-	+	1	0
-	+	12	0
-	+	1	0
-	+	12	0
-	+	1	0
-	+	12	0
-	+	1	0
-	+	12	0
-	+	12	21
-	+	12	0
-	+	1	0
-	+	12	0
+	*	1526823494	0
+	"	80	0
+	^	80	0
+	.	79	0
 	+	1	0
 	+	12	0
 	+	1	0
@@ -1420,49 +1508,307 @@ $\/
 	+	7	0
 	+	71	17
 	+	70	0
+	+	71	0
+	+	72	21
+	+	71	1
+	+	87	0
+	+	90	9
+	+	73	0
+	+	83	0
+	+	90	0
+	+	83	0
+	+	84	0
+	+	73	0
+	+	76	0
+	+	88	0
+	+	77	19
+	+	76	0
+	+	77	0
+	+	76	0
+	+	75	0
+	+	73	0
+	+	81	8
+	+	81	6
+	+	81	0
+	+	81	4
+	+	81	0
+	+	81	17
+	+	81	0
+	+	81	13
+	+	81	0
+	+	81	14
+	+	81	15
+	+	81	21
+	+	81	0
+	+	82	0
+	+	79	0
 
-> ~/vim80-kaoriya-win64/plugins/vimdoc-ja/doc/[denite]
-	*	1526425009	0
+> ~/[denite]
+	*	1526823310	0
 	"	1	0
 	.	1	0
 	+	1	0
 
-> ~/vim80-kaoriya-win64/plugins/vimdoc-ja/doc/help.jax
-	*	1526424997	0
-	"	9	0
-
-> ~/[denite]
-	*	1526424901	0
-	"	1	2
-	.	1	0
-	+	1	0
-
-> I:/home/[denite]
-	*	1526424405	0
-	"	1	2
-	.	1	0
-	+	1	0
-
-> I:/home/_gvimrc
-	*	1526424403	0
-	"	2	0
+> ~/vim80-kaoriya-win64/plugins/vimdoc-ja/doc/options.jax
+	*	1526823264	0
+	"	4383	3
 
 > I:/home/.vimrc
-	*	1526402909	0
-	"	117	1
-	^	133	5
-	.	134	0
+	*	1526822765	0
+	"	428	0
+	^	428	0
+	.	429	0
 	+	133	0
 	+	134	0
+	+	428	0
+	+	428	19
+	+	428	22
+	+	428	0
+	+	429	0
+
+> I:/home/_gvimrc
+	*	1526821826	0
+	"	30	0
+
+> ~/vimfiles/colors/molokai2.vim
+	*	1526821001	0
+	"	33	0
+	^	119	33
+	.	119	32
+	+	124	0
+	+	89	0
+	+	219	0
+	+	89	20023
+	+	79	1
+	+	79	0
+	+	1	113
+	+	8	1
+	+	89	0
+	+	226	0
+	+	9	0
+	+	125	0
+	+	124	0
+	+	125	34
+	+	226	6
+	+	226	16
+	+	226	0
+	+	37	40
+	+	37	49
+	+	37	40
+	+	37	0
+	+	37	39
+	+	37	43
+	+	37	40
+	+	37	22
+	+	226	0
+	+	37	0
+	+	125	0
+	+	36	1
+	+	30	0
+	+	32	36
+	+	35	0
+	+	32	36
+	+	35	0
+	+	32	32
+	+	35	0
+	+	32	34
+	+	34	0
+	+	28	0
+	+	31	0
+	+	34	0
+	+	32	0
+	+	34	0
+	+	33	0
+	+	32	15
+	+	33	29
+	+	32	0
+	+	9	0
+	+	9	42
+	+	21	26
+	+	9	0
+	+	35	0
+	+	119	0
+	+	118	0
+	+	119	34
+	+	36	0
+	+	119	32
+	+	116	9
+	+	117	3
+	+	116	0
+	+	120	3
+	+	121	3
+	+	119	32
+
+> ~/vimfiles/colors/[denite]
+	*	1526819833	0
+	"	3	0
+	.	1	0
+	+	1	0
+
+> ~/vim80-kaoriya-win64/plugins/vimdoc-ja/doc/help.jax
+	*	1526817600	0
+	"	343	1
+
+> C:/Users/Jun/.config/_gvimrc
+	*	1526817594	0
+	"	40	0
+	.	6	0
+	+	6	0
+
+> C:/Users/Jun/.config/.vimrc
+	*	1526817593	0
+	"	12	0
+
+> G:/MyDocuments/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
+	*	1526817593	0
+	"	1	0
+	^	3	45
+	.	3	17
+	+	1	16
+	+	2	18
+	+	1	19
+	+	2	19
+	+	3	20
+	+	1	13
+	+	2	14
+	+	3	17
+
+> ~/vim80-kaoriya-win64/plugins/vimdoc-ja/doc/[denite]
+	*	1526817589	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/vimfiles/colors/molokai.vim
+	*	1526817296	0
+	"	1	0
+
+> ~/.vim/rc/dein.toml
+	*	1526815588	0
+	"	13	0
+	^	40	0
+	.	40	0
+	+	1	0
+	+	8	0
+	+	2	0
+	+	9	0
+	+	8	0
+	+	6	0
+	+	9	32
+	+	11	0
+	+	12	36
+	+	27	0
+	+	12	0
+	+	27	0
+	+	26	0
+	+	20	0
+	+	12	24
+	+	10	0
+	+	14	0
+	+	16	5
+	+	16	24
+	+	15	0
+	+	10	0
+	+	18	0
+	+	20	0
+	+	19	23
+	+	20	0
+	+	21	0
+	+	23	0
+	+	24	0
+	+	22	13
+	+	23	0
+	+	22	19
+	+	25	19
+	+	26	0
+	+	20	0
+	+	27	0
+	+	31	0
+	+	27	0
+	+	29	18
+	+	32	24
+	+	29	20
+	+	34	0
+	+	33	0
+	+	35	13
+	+	36	0
+	+	40	0
+	+	37	0
+	+	38	0
+	+	38	1
+	+	38	35
+	+	40	0
+
+> C:/Users/Jun/AppData/Local/Temp/lza23260/ayu-vim-master/colors/ayu.vim
+	*	1526815458	0
+	"	138	0
+
+> ~/.vim/rc/[denite]
+	*	1526815455	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> C:/Users/Jun/.config/[denite]
+	*	1526813819	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> ~/vimfiles/colors/NightScape.vim
+	*	1526809343	0
+	"	12	0
+	^	54	0
+	.	51	0
+	+	131	0
+	+	17	0
+	+	134	28
+	+	22	0
+	+	51	0
+
+> ~/vimfiles/colors/palenight.vim
+	*	1526808974	0
+	"	73	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/vimfiles/colors/badwolf.vim
+	*	1526807023	0
+	"	654	0
+
+> ~/vimfiles/colors/goodwolf.vim
+	*	1526805797	0
+	"	1	0
+
+> ~/1
+	*	1526803158	0
+	"	30	0
+
+> I:/home/[denite]
+	*	1526803113	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.cache/dein/.cache/.vimrc/.dein/doc/denite.txt
+	*	1526802562	0
+	"	84	0
+	a	260	42
+
+> ~/vim80-kaoriya-win64/[denite]
+	*	1526425735	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.cache/dein/cache_gvim
+	*	1526425386	0
+	"	1	0
 
 > ~/.gitconfig
 	*	1526402524	0
 	"	7	19
-
-> ~/.cache/dein/.cache/.vimrc/.dein/doc/denite.txt
-	*	1526391892	0
-	"	680	24
-	a	260	42
 
 > ~/vim80-kaoriya-win64/plugins/vimdoc-ja/doc/index.jax
 	*	1525679914	0
@@ -1479,20 +1825,6 @@ $\/
 > ~/vim80-kaoriya-win64/vimrc
 	*	1525603382	0
 	"	247	45
-
-> G:/MyDocuments/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
-	*	1525592977	0
-	"	4	0
-	^	3	45
-	.	3	17
-	+	1	16
-	+	2	18
-	+	1	19
-	+	2	19
-	+	3	20
-	+	1	13
-	+	2	14
-	+	3	17
 
 > G:/MyDocuments/WindowsPowerShell/[denite]
 	*	1525592936	0
@@ -1530,16 +1862,6 @@ $\/
 	+	1	0
 	+	74	0
 
-> C:/Users/Jun/.config/_gvimrc
-	*	1525481110	0
-	"	14	20
-	.	6	0
-	+	6	0
-
-> C:/Users/Jun/.config/.vimrc
-	*	1525481021	0
-	"	12	0
-
 > ~/.cache/dein/.cache/.vimrc/.dein/doc/NERD_commenter.txt
 	*	1525481015	0
 	"	550	18
@@ -1565,10 +1887,6 @@ $\/
 	+	2	25
 	+	3	0
 	+	2	3
-
-> ~/1
-	*	1525427343	0
-	"	33	72
 
 > ~/vim80-kaoriya-win64/test.txt
 	*	1525424068	0
@@ -1601,10 +1919,6 @@ $\/
 > ~/vim80-kaoriya-win64/vim80/doc/version7.txt
 	*	1525400585	0
 	"	6	5
-
-> ~/vim80-kaoriya-win64/plugins/vimdoc-ja/doc/options.jax
-	*	1525400553	0
-	"	44	13
 
 > ~/aaa.c
 	*	1525366720	0

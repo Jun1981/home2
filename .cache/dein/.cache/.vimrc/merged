@@ -1,2 +1,2 @@
 100
-['Shougo/dein.vim', 'Shougo/denite.nvim', 'Shougo/neomru.vim', 'Shougo/neoyank.vim', 'qpkorr/vim-renamer', 'scrooloose/nerdcommenter']
+['Shougo/dein.vim', 'Shougo/denite.nvim', 'Shougo/neomru.vim', 'Shougo/neoyank.vim', 'qpkorr/vim-renamer', 'scrooloose/nerdcommenter', 'vim-airline/vim-airline', 'vim-airline/vim-airline-themes']

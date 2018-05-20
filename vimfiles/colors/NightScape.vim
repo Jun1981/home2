@@ -19,7 +19,7 @@ hi Normal       guifg=#ffffff       guibg=#002030       gui=NONE
 hi Folded       guifg=#c2bfa5       guibg=#050505       gui=underline
             \   ctermfg=lightgray   ctermbg=black       cterm=underline
 
-hi LineNr       guifg=#ffdd66       guibg=#103040       gui=NONE
+hi LineNr       guifg=#cccccc       guibg=#103040       gui=NONE
             \   ctermfg=darkgray    ctermbg=NONE        cterm=NONE
 
 hi Directory    guifg=#00bbdd       guibg=NONE          gui=NONE
@@ -131,7 +131,7 @@ hi WarningMsg   guifg=#ccae22       guibg=NONE          gui=bold
 " }}}
 " syntax highlighting groups (:help group-name) {{{
 
-hi Comment      guifg=#ddbb44      guibg=NONE          gui=italic
+hi Comment      guifg=#bb9922      guibg=NONE          gui=italic
             \   ctermfg=brown       ctermbg=NONE        cterm=NONE
 
 hi Constant     guifg=#ff3333       guibg=NONE          gui=bold
