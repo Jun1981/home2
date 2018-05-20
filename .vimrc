@@ -42,8 +42,6 @@ nnoremap <M-v> :e ~/.vimrc<CR>
 nnoremap <M-V> :e ~/_gvimrc<CR>
 "Œ»İƒtƒ@ƒCƒ‹Ä“Ç
 nnoremap <M-s> :source%<CR>
-noremap<ESC> <ESC><ESC>
-noremap <C-[> <C-[><C-[>
 
 
 "IM‚Ì“®ì
