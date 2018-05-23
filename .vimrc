@@ -1,5 +1,5 @@
-set nocompatible       " vim‚Å‚·‚æ(Å‰‚É‘‚­)
-set shellslash          "Windows‚ÌƒpƒX—pH
+set nocompatible       " vimã§ã™ã‚ˆ(æœ€åˆã«æ›¸ã)
+set shellslash          "Windowsã®ãƒ‘ã‚¹ç”¨ï¼Ÿ
 filetype plugin indent on     " (5)
 
 
@@ -26,31 +26,27 @@ scriptencoding cp932
 "-------------------------------------------------------
 
 
-"ƒL[ƒJƒXƒ^ƒ}ƒCƒY
+"ã‚­ãƒ¼ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚º
 "--------------------
 "--------------------------------------------------------------------------------
 set winaltkeys=no 
 
 
 vnoremap <A-/> :s/\\/\//g<CR>
-".vimrC‚ğŠJ‚­
+".vimrCã‚’é–‹ã
 "nnoremap <F2> :e~/.vimrc<CR>
 "nnoremap <C-S-v> :e ~/.vimrc<CR>
 nnoremap <M-v> :e ~/.vimrc<CR>
 nnoremap <M-V> :e ~/_gvimrc<CR>
 nnoremap <M-P> :e ~/.vim/rc/dein.toml<CR>
 
-"Œ»İƒtƒ@ƒCƒ‹Ä“Ç
+"ç¾åœ¨ãƒ•ã‚¡ã‚¤ãƒ«å†èª­è¾¼
 nnoremap <M-s> :source%<CR>
-‚†‚“‚„‚†‚„‚“‚†‚“‚„‚†
-‚†‚“‚„‚†‚“‚„
 
-‚†‚“‚„‚†‚“‚„‚†‚“‚„‚†
-f
 
-"wM‚Ì“®ì
+"wMã®å‹•ä½œ
 
-"ƒCƒ“ƒT[ƒgƒ‚[ƒhˆÈŠO‚ÍIME‚ğOFF‚É‚·‚é
+"ã‚¤ãƒ³ã‚µãƒ¼ãƒˆãƒ¢ãƒ¼ãƒ‰æ™‚ä»¥å¤–ã¯IMEã‚’OFFã«ã™ã‚‹
 augroup InsModeAu
     autocmd!
     autocmd InsertEnter,CmdwinEnter * set noimdisable
@@ -58,7 +54,7 @@ augroup InsModeAu
 augroup END
 "----------------------------------------------------------------------------------------------------
 
-"help‚Ì’†‚ÌƒŠƒ“ƒN‚ÖˆÚ“®
+"helpã®ä¸­ã®ãƒªãƒ³ã‚¯ã¸ç§»å‹•
 
 "nnoremap <M-j> /|[^ |]\+|<CR>
 "nnoremap <M-j> /|[^ |]\+|<CR>
@@ -70,33 +66,33 @@ augroup END
 "----------------------------------------------------------------------------------------------------
 
 
-"Python‚ÌƒpƒXw’è
+"Pythonã®ãƒ‘ã‚¹æŒ‡å®š
 "let g:python3_host_prog = expand('~/.pyenv/versions/neovim3/bin/python')
 let g:python3_host_prog = expand('~/python3')
 set runtimepath+=$HOME
 
 
-"guioption‚ÌƒgƒOƒ‹
+"guioptionã®ãƒˆã‚°ãƒ«
 function! ToggleGuiOptions(flag_option)
-  if a:flag_option ==? 'T' " ƒc[ƒ‹ƒo[‚Ì•\¦/”ñ•\¦
+  if a:flag_option ==? 'T' " ãƒ„ãƒ¼ãƒ«ãƒãƒ¼ã®è¡¨ç¤º/éè¡¨ç¤º
     if &guioptions =~# 'T'
       set guioptions-=T
     else
       set guioptions+=T
     endif
-  elseif a:flag_option ==? 'm' "ƒƒjƒ…[ƒo[‚Ì•\¦/”ñ•\¦
+  elseif a:flag_option ==? 'm' "ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒãƒ¼ã®è¡¨ç¤º/éè¡¨ç¤º
     if &guioptions =~# 'm'
       set guioptions-=m
     else
       set guioptions+=m
     endif
-  elseif a:flag_option ==? 'r' "‰EƒXƒNƒ[ƒ‹ƒo[‚Ì•\¦/”ñ•\¦
+  elseif a:flag_option ==? 'r' "å³ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒãƒ¼ã®è¡¨ç¤º/éè¡¨ç¤º
     if &guioptions =~# 'r'
       set guioptions-=r
     else
       set guioptions+=r
     endif
-  elseif a:flag_option ==? 'l' "¶ƒXƒNƒ[ƒ‹ƒo[‚Ì•\¦/”ñ•\¦
+  elseif a:flag_option ==? 'l' "å·¦ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒãƒ¼ã®è¡¨ç¤º/éè¡¨ç¤º
     if &guioptions =~# 'l'
       set guioptions-=l
     else
@@ -141,46 +137,46 @@ endif
 "---------------------------------
 
 
-"Vim7.3V‹@”\
+"Vim7.3æ–°æ©Ÿèƒ½
 
 if has('persistent_undo')
   set undodir=./vimundo,~/vimundo
   augroup vimrC-undofile
     autocmd!
-	"~/ˆÈ‰º‚Ìƒtƒ@ƒCƒ‹‚Ì‚İ—LŒø
+	"~/ä»¥ä¸‹ã®ãƒ•ã‚¡ã‚¤ãƒ«ã®ã¿æœ‰åŠ¹
     autocmd bufReadPre ~/* setlocal undofile
   augroup END
 endif
 
 set autochdir
 "
-"Œ»İ‚Ìƒtƒ@ƒCƒ‹–¼‚ğ‘}“ü
+"ç¾åœ¨ã®ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ¿å…¥
 if has('win32')
 nnoremap <silent> gkf :let @*=expand('%:p')<CR>:echo "Copy filename to noname register."<CR>
 elseif has('unix')
 nnoremap <silent> gkf :let @"=expand('%:p')<CR>:echo "Copy filename to noname register."<CR>
 endif
 
-"Œ»İ•ÒW’†‚Ìƒoƒbƒtƒ@‚Ìƒtƒ@ƒCƒ‹–¼‚ğ•ÏX 
+"ç¾åœ¨ç·¨é›†ä¸­ã®ãƒãƒƒãƒ•ã‚¡ã®ãƒ•ã‚¡ã‚¤ãƒ«åã‚’å¤‰æ›´ 
 command! -nargs=+ -bang -complete=file Rename let pbnr=fnamey(bufname('%'), ':p')|exec 'f '.escape(<q-args>, ' ')|w<bang>|call delete(pbnr)
 
-"s‚Ì"’†‰›‚ÉˆÚ“®
+"è¡Œã®"ä¸­å¤®ã«ç§»å‹•
 noremap <expr> gm (virtcol('$')/2).'\|'
 
 
 "-------------------------------------------------------------------------------
-"CTRL-A ‚Å8i”‚ÌŒvZ‚ğ‚³‚¹‚È‚¢
+"CTRL-A ã§8é€²æ•°ã®è¨ˆç®—ã‚’ã•ã›ãªã„
 set nrformats-=octal
 "-------------------------------------------------------------------------------
-"AltƒL[‚Åƒƒjƒ…[‚ğŠJ‚©‚È‚¢
+"Altã‚­ãƒ¼ã§ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’é–‹ã‹ãªã„
 
 "-------------------------------------------------------------------------------
 
 "-------------------------------------------------------------------------------
-" ƒXƒe[ƒ^ƒXƒ‰ƒCƒ“
-set laststatus=2 " í‚ÉƒXƒe[ƒ^ƒXƒ‰ƒCƒ“‚ğ•\¦
+" ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³
+set laststatus=2 " å¸¸ã«ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³ã‚’è¡¨ç¤º
 set statusline=%<%F\ %r%h%w%y%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%4v(ASCII=%03.3b,HEX=%02.2B)\ %l/%L(%P)%m
-"ƒRƒ}ƒ“ƒhƒ‰ƒCƒ“‚Ì‚‚³
+"ã‚³ãƒãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³ã®é«˜ã•
 set cmdheight=1
 "-------------------------------------------------------
 
@@ -193,32 +189,32 @@ set visualbell
 
 
 "-------------------------------------------------------------------------------
-" Šî–{İ’è
-" let mapleader = ","            " ƒL[ƒ}ƒbƒvƒŠ[ƒ_[
-set scrolloff=5                " ƒXƒNƒ[ƒ‹‚Ì—]”’Šm•Û
-set textwidth=0                " ˆês‚É’·‚¢•¶Í‚ğ‘‚¢‚Ä‚¢‚Ä‚à©“®Ü‚è•Ô‚µ‚ğ‚µ‚È‚¢
-set backupdir=~/vimfiles/backup                 " ƒoƒbƒNƒAƒbƒvæ‚ç‚È‚¢
-set autoread                   " ‘¼‚Å‘‚«Š·‚¦‚ç‚ê‚½‚ç©“®‚Å“Ç‚İ’¼‚·
-set noswapfile                 " ƒXƒƒbƒvƒtƒ@ƒCƒ‹ì‚ç‚È‚¢
-set hidden                     " •ÒW’†‚Å‚à‘¼‚Ìƒtƒ@ƒCƒ‹‚ğŠJ‚¯‚é‚æ‚¤‚É‚·‚é
-set backspace=indent,eol,start " ƒoƒbƒNƒXƒy[ƒX‚Å‚È‚ñ‚Å‚àÁ‚¹‚é‚æ‚¤‚É
-set formatoptions=lmoq         " ƒeƒLƒXƒg®Œ`ƒIƒvƒVƒ‡ƒ“Cƒ}ƒ‹ƒ`ƒoƒCƒgŒn‚ğ’Ç‰Á
-set vb t_vb=                   " ƒr[ƒv‚ğ‚È‚ç‚³‚È‚¢
-set browsedir=buffer           " Explore‚Ì‰ŠúƒfƒBƒŒƒNƒgƒŠ
-set whichwrap=b,s,h,l,<,>,[,]  " ƒJ[ƒ\ƒ‹‚ğs“ªAs––‚Å~‚Ü‚ç‚È‚¢‚æ‚¤‚É‚·‚é
+" åŸºæœ¬è¨­å®š
+" let mapleader = ","            " ã‚­ãƒ¼ãƒãƒƒãƒ—ãƒªãƒ¼ãƒ€ãƒ¼
+set scrolloff=5                " ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«æ™‚ã®ä½™ç™½ç¢ºä¿
+set textwidth=0                " ä¸€è¡Œã«é•·ã„æ–‡ç« ã‚’æ›¸ã„ã¦ã„ã¦ã‚‚è‡ªå‹•æŠ˜ã‚Šè¿”ã—ã‚’ã—ãªã„
+set backupdir=~/vimfiles/backup                 " ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—å–ã‚‰ãªã„
+set autoread                   " ä»–ã§æ›¸ãæ›ãˆã‚‰ã‚ŒãŸã‚‰è‡ªå‹•ã§èª­ã¿ç›´ã™
+set noswapfile                 " ã‚¹ãƒ¯ãƒƒãƒ—ãƒ•ã‚¡ã‚¤ãƒ«ä½œã‚‰ãªã„
+set hidden                     " ç·¨é›†ä¸­ã§ã‚‚ä»–ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‹ã‘ã‚‹ã‚ˆã†ã«ã™ã‚‹
+set backspace=indent,eol,start " ãƒãƒƒã‚¯ã‚¹ãƒšãƒ¼ã‚¹ã§ãªã‚“ã§ã‚‚æ¶ˆã›ã‚‹ã‚ˆã†ã«
+set formatoptions=lmoq         " ãƒ†ã‚­ã‚¹ãƒˆæ•´å½¢ã‚ªãƒ—ã‚·ãƒ§ãƒ³ï¼Œãƒãƒ«ãƒãƒã‚¤ãƒˆç³»ã‚’è¿½åŠ 
+set vb t_vb=                   " ãƒ“ãƒ¼ãƒ—ã‚’ãªã‚‰ã•ãªã„
+set browsedir=buffer           " Exploreã®åˆæœŸãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª
+set whichwrap=b,s,h,l,<,>,[,]  " ã‚«ãƒ¼ã‚½ãƒ«ã‚’è¡Œé ­ã€è¡Œæœ«ã§æ­¢ã¾ã‚‰ãªã„ã‚ˆã†ã«ã™ã‚‹
 
 
 "-------------------------------------------------------------------------------
-" •\¦
-set showmatch         " Š‡ŒÊ‚Ì‘Î‰‚ğƒnƒCƒ‰ƒCƒg
-set showcmd           " “ü—Í’†‚ÌƒRƒ}ƒ“ƒh‚ğ•\¦
-set number            " s”Ô†•\¦
-"set list              " •s‰Â‹•¶š•\¦
-set listchars=tab:>.,trail:_,extends:>,precedes:<" •s‰Â‹•¶š‚Ì•\¦Œ`®
-set display=uhex      " ˆóš•s‰Â”\•¶š‚ğ16i”‚Å•\¦
+" è¡¨ç¤º
+set showmatch         " æ‹¬å¼§ã®å¯¾å¿œã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆ
+set showcmd           " å…¥åŠ›ä¸­ã®ã‚³ãƒãƒ³ãƒ‰ã‚’è¡¨ç¤º
+set number            " è¡Œç•ªå·è¡¨ç¤º
+"set list              " ä¸å¯è¦–æ–‡å­—è¡¨ç¤º
+set listchars=tab:>.,trail:_,extends:>,precedes:<" ä¸å¯è¦–æ–‡å­—ã®è¡¨ç¤ºå½¢å¼
+set display=uhex      " å°å­—ä¸å¯èƒ½æ–‡å­—ã‚’16é€²æ•°ã§è¡¨ç¤º
 
 
-" ƒJƒŒƒ“ƒgƒEƒBƒ“ƒhƒE‚É‚Ì‚İŒrü‚ğˆø‚­
+" ã‚«ãƒ¬ãƒ³ãƒˆã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã«ã®ã¿ç½«ç·šã‚’å¼•ã
 augroup cch
 autocmd! cch
 autocmd WinLeave * set nocursorline
@@ -228,39 +224,39 @@ augroup END
 
 
 "-------------------------------------------------------------------------------
-" ƒCƒ“ƒfƒ“ƒg
+" ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆ
 set autoindent
 set smartindent
 set cindent
-" softtabstop‚ÍTabƒL[‰Ÿ‚µ‰º‚°‚Ì‘}“ü‚³‚ê‚é‹ó”’‚Ì—ÊC0‚Ìê‡‚Ítabstop‚Æ“¯‚¶CBS‚É‚à‰e‹¿‚·‚é
+" softtabstopã¯Tabã‚­ãƒ¼æŠ¼ã—ä¸‹ã’æ™‚ã®æŒ¿å…¥ã•ã‚Œã‚‹ç©ºç™½ã®é‡ï¼Œ0ã®å ´åˆã¯tabstopã¨åŒã˜ï¼ŒBSã«ã‚‚å½±éŸ¿ã™ã‚‹
 set tabstop=4 shiftwidth=4 softtabstop=0
-set noexpandtab " ƒ^ƒu‚ğƒXƒy[ƒX‚É“WŠJ‚µ‚È‚¢
+set noexpandtab " ã‚¿ãƒ–ã‚’ã‚¹ãƒšãƒ¼ã‚¹ã«å±•é–‹ã—ãªã„
 
 
 "-------------------------------------------------------------------------------
-" •âŠ®E—š—ğ
-set wildmenu           " ƒRƒ}ƒ“ƒh•âŠ®‚ğ‹­‰»
-set wildchar=<tab>     " ƒRƒ}ƒ“ƒh•âŠ®‚ğŠJn‚·‚éƒL[
-set wildmode=list:full " ƒŠƒXƒg•\¦CÅ’·ƒ}ƒbƒ`
-set history=1000       " ƒRƒ}ƒ“ƒhEŒŸõƒpƒ^[ƒ“‚Ì—š—ğ”
-set complete+=k        " •âŠ®‚É«‘ƒtƒ@ƒCƒ‹’Ç‰Á
+" è£œå®Œãƒ»å±¥æ­´
+set wildmenu           " ã‚³ãƒãƒ³ãƒ‰è£œå®Œã‚’å¼·åŒ–
+set wildchar=<tab>     " ã‚³ãƒãƒ³ãƒ‰è£œå®Œã‚’é–‹å§‹ã™ã‚‹ã‚­ãƒ¼
+set wildmode=list:full " ãƒªã‚¹ãƒˆè¡¨ç¤ºï¼Œæœ€é•·ãƒãƒƒãƒ
+set history=1000       " ã‚³ãƒãƒ³ãƒ‰ãƒ»æ¤œç´¢ãƒ‘ã‚¿ãƒ¼ãƒ³ã®å±¥æ­´æ•°
+set complete+=k        " è£œå®Œã«è¾æ›¸ãƒ•ã‚¡ã‚¤ãƒ«è¿½åŠ 
 
 
 "-------------------------------------------------------------------------------
-" ŒŸõİ’è
-set wrapscan   " ÅŒã‚Ü‚ÅŒŸõ‚µ‚½‚çæ“ª‚Ö–ß‚é
-set ignorecase " ‘å•¶š¬•¶š–³‹
-set smartcase  " ‘å•¶š‚Å‚Í‚¶‚ß‚½‚ç‘å•¶š¬•¶š–³‹‚µ‚È‚¢
-set incsearch  " ƒCƒ“ƒNƒŠƒƒ“ƒ^ƒ‹ƒT[ƒ`
-set hlsearch   " ŒŸõ•¶š‚ğƒnƒCƒ‰ƒCƒg
+" æ¤œç´¢è¨­å®š
+set wrapscan   " æœ€å¾Œã¾ã§æ¤œç´¢ã—ãŸã‚‰å…ˆé ­ã¸æˆ»ã‚‹
+set ignorecase " å¤§æ–‡å­—å°æ–‡å­—ç„¡è¦–
+set smartcase  " å¤§æ–‡å­—ã§ã¯ã˜ã‚ãŸã‚‰å¤§æ–‡å­—å°æ–‡å­—ç„¡è¦–ã—ãªã„
+set incsearch  " ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ã‚¿ãƒ«ã‚µãƒ¼ãƒ
+set hlsearch   " æ¤œç´¢æ–‡å­—ã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆ
 
-"‘I‘ğ‚µ‚½•¶š—ñ‚ğŒŸõ
+"é¸æŠã—ãŸæ–‡å­—åˆ—ã‚’æ¤œç´¢
 vnoremap <silent> // y/<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
-"‘I‘ğ‚µ‚½•¶š—ñ‚ğ’uŠ·
+"é¸æŠã—ãŸæ–‡å­—åˆ—ã‚’ç½®æ›
 vnoremap /r "xy:%s/<C-R>=escape(@x, '\\/.*$^~[]')<CR>//gc<Left><Left><Left>
 
 
-" ŒŸõ‚È‚Ç‚Å”ò‚ñ‚¾‚ç‚»‚±‚ğ^‚ñ’†‚É
+" æ¤œç´¢ãªã©ã§é£›ã‚“ã ã‚‰ãã“ã‚’çœŸã‚“ä¸­ã«
 nmap n nzz
 nmap N Nzz
 nmap * *zz
@@ -269,7 +265,7 @@ nmap g* g*zz
 nmap g# g#zz
 nmap G Gzz
 
-"ƒVƒFƒ‹‚ğPowerShell‚É
+"ã‚·ã‚§ãƒ«ã‚’PowerShellã«
 set shell=powershell.exe"
 "set shell=cmd.exe
 
@@ -278,16 +274,16 @@ set shell=powershell.exe"
 
 
 
-" ƒvƒ‰ƒOƒCƒ“ŠÖŒW
+" ãƒ—ãƒ©ã‚°ã‚¤ãƒ³é–¢ä¿‚
 "dein
 "----------------------------------------------------------------------------------------------------
 
-" ƒvƒ‰ƒOƒCƒ“‚ªÀÛ‚ÉƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚éƒfƒBƒŒƒNƒgƒŠ
+" ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ãŒå®Ÿéš›ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã‚‹ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª
 let s:dein_dir = expand('~/.cache/dein')
-" dein.vim –{‘Ì
+" dein.vim æœ¬ä½“
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
-" dein.vim ‚ª‚È‚¯‚ê‚Î github ‚©‚ç—‚Æ‚µ‚Ä‚­‚é
+" dein.vim ãŒãªã‘ã‚Œã° github ã‹ã‚‰è½ã¨ã—ã¦ãã‚‹
 if &runtimepath !~# '/dein.vim'
   if !isdirectory(s:dein_repo_dir)
     execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
@@ -295,49 +291,49 @@ if &runtimepath !~# '/dein.vim'
   execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
-" İ’èŠJn
+" è¨­å®šé–‹å§‹
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
-  " ƒvƒ‰ƒOƒCƒ“ƒŠƒXƒg‚ğû‚ß‚½ TOML ƒtƒ@ƒCƒ‹
-  " —\‚ß TOML ƒtƒ@ƒCƒ‹iŒãqj‚ğ—pˆÓ‚µ‚Ä‚¨‚­
+  " ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ãƒªã‚¹ãƒˆã‚’åã‚ãŸ TOML ãƒ•ã‚¡ã‚¤ãƒ«
+  " äºˆã‚ TOML ãƒ•ã‚¡ã‚¤ãƒ«ï¼ˆå¾Œè¿°ï¼‰ã‚’ç”¨æ„ã—ã¦ãŠã
   let g:rc_dir    = expand('~/.vim/rc')
   let s:toml      = g:rc_dir . '/dein.toml'
   let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
 
-  " TOML ‚ğ“Ç‚İ‚İAƒLƒƒƒbƒVƒ…‚µ‚Ä‚¨‚­
+  " TOML ã‚’èª­ã¿è¾¼ã¿ã€ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã—ã¦ãŠã
   call dein#load_toml(s:toml,      {'lazy': 0})
   call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
-  " İ’èI—¹
+  " è¨­å®šçµ‚äº†
   call dein#end()
   call dein#save_state()
  
 endif
 
-" ‚à‚µA–¢ƒCƒ“ƒXƒg[ƒ‹‚à‚Ì‚à‚Ì‚ª‚ ‚Á‚½‚çƒCƒ“ƒXƒg[ƒ‹
+" ã‚‚ã—ã€æœªã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚‚ã®ã‚‚ã®ãŒã‚ã£ãŸã‚‰ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 if dein#check_install()
   call dein#install()
 endif
 "----------------------------------------------------------------------------------------------------
 
 "Denite
-"ƒL[ƒ}ƒbƒv
+"ã‚­ãƒ¼ãƒãƒƒãƒ—
 nnoremap <M-b> :Denite  -mode=normal buffer<CR>
 nnoremap <M-f> :Denite  -mode=normal file/old<CR>
 nnoremap <M-F> :Denite  -mode=normal file_mru<CR>
 nnoremap <M-y> :Denite  -mode=normal neoyank<CR>
-" ƒJƒ‰[ƒXƒL[ƒ€‚ÌØ‚è‘Ö‚¦‚ğŠÈ’P‚É‚·‚é
+" ã‚«ãƒ©ãƒ¼ã‚¹ã‚­ãƒ¼ãƒ ã®åˆ‡ã‚Šæ›¿ãˆã‚’ç°¡å˜ã«ã™ã‚‹
 " http://inputxoutput.com/vim-advent-calendar-2012/
 nnoremap <Leader>dc :Denite -auto-preview  colorscheme<CR>
 "----------------------------------------------------------------------------------------------------
 "
-"ƒ^ƒu‚ğØ‚è‘Ö‚¦‰Â”\‚É
+"ã‚¿ãƒ–ã‚’åˆ‡ã‚Šæ›¿ãˆå¯èƒ½ã«
 "noremap=<C-p> :tablast
 "noremap=<C-n> :tabNext
 
 
-"ƒ^ƒuŠÖŒW
+"ã‚¿ãƒ–é–¢ä¿‚
 " Anywhere SID.
 function! s:SID_PREFIX()
   return matchstr(expand('<sfile>'), '<SNR>\d\+_\zeSID_PREFIX$')
@@ -363,7 +359,7 @@ function! s:my_tabline()  "{{{
   return s
 endfunction "}}}
 let &tabline = '%!'. s:SID_PREFIX() . 'my_tabline()'
-set showtabline=2 " í‚Éƒ^ƒuƒ‰ƒCƒ“‚ğ•\¦
+set showtabline=2 " å¸¸ã«ã‚¿ãƒ–ãƒ©ã‚¤ãƒ³ã‚’è¡¨ç¤º
 
 "vim-airline
 " The prefix key.
@@ -373,19 +369,19 @@ nmap    t [Tag]
 for n in range(1, 9)
   execute 'nnoremap <silent> [Tag]'.n  ':<C-u>tabnext'.n.'<CR>'
 endfor
-" t1 ‚Å1”Ô¶‚Ìƒ^ƒuAt2 ‚Å1”Ô¶‚©‚ç2”Ô–Ú‚Ìƒ^ƒu‚ÉƒWƒƒƒ“ƒv
+" t1 ã§1ç•ªå·¦ã®ã‚¿ãƒ–ã€t2 ã§1ç•ªå·¦ã‹ã‚‰2ç•ªç›®ã®ã‚¿ãƒ–ã«ã‚¸ãƒ£ãƒ³ãƒ—
 
 map <silent> [Tag]c :tablast <bar> tabnew<CR>
-" tc V‚µ‚¢ƒ^ƒu‚ğˆê”Ô‰E‚Éì‚é
+" tc æ–°ã—ã„ã‚¿ãƒ–ã‚’ä¸€ç•ªå³ã«ä½œã‚‹
 map <silent> [Tag]x :tabclose<CR>
-" tx ƒ^ƒu‚ğ•Â‚¶‚é
+" tx ã‚¿ãƒ–ã‚’é–‰ã˜ã‚‹
 map <silent> [Tag]n :tabnext<CR>
-" tn Ÿ‚Ìƒ^ƒu
+" tn æ¬¡ã®ã‚¿ãƒ–
 map <silent> [Tag]p :tabprevious<CR>
-" tp ‘O‚Ìƒ^ƒu
+" tp å‰ã®ã‚¿ãƒ–
 "----------------------------------------------------------------------------------------------------
 "
-let g:airline#extensions#tabline#buffer_idx_mode = 1 "ƒ^ƒu‚É”Ô†‚ğ•\¦‚·‚é
+let g:airline#extensions#tabline#buffer_idx_mode = 1 "ã‚¿ãƒ–ã«ç•ªå·ã‚’è¡¨ç¤ºã™ã‚‹
 let g:airline#extensions#tabline#enabled = 1
 "----------------------------------------------------------------------------------------------------
 "
