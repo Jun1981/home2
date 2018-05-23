@@ -1,8 +1,18 @@
-language: ruby
-before_install:
-  - curl -f -L "https://raw.githubusercontent.com/vim-airline/vim-airline-themes/master/autoload/airline/themes/simple.vim" -o autoload/airline/themes/simple.vim
-  - curl -f -L "https://raw.githubusercontent.com/vim-airline/vim-airline-themes/master/autoload/airline/themes/molokai.vim" -o autoload/airline/themes/molokai.vim
-  - mkdir colors && curl -f -L 'https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim' -o colors/molokai.vim
-rvm:
-  - 1.9.3
-script: rake ci
+sudo: false
+dist: trusty
+
+language: python
+
+python:
+    - 3.5
+    - 3.6
+
+install:
+    # Install Neovim via Gist
+    # https://gist.github.com/lambdalisue/0f461f6a91743895394e63a9a1c65232
+    - curl -sL https://gist.githubusercontent.com/lambdalisue/0f461f6a91743895394e63a9a1c65232/raw/install_nvim_for_ci.sh | bash
+    - make install
+
+script:
+    - PATH="$HOME/neovim/bin:$PATH" make test
+    - make lint

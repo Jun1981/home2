@@ -9,7 +9,6 @@ set encoding=cp932
 scriptencoding cp932
 
 
-
 "----------------------------------------------------------------------------------------------------
 "
 
@@ -18,7 +17,6 @@ scriptencoding cp932
 "set encoding=cp932
 "scriptencoding cp932
 "scriptencoding utf-8
-
 
 
 "set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
@@ -40,15 +38,24 @@ vnoremap <A-/> :s/\\/\//g<CR>
 "nnoremap <C-S-v> :e ~/.vimrc<CR>
 nnoremap <M-v> :e ~/.vimrc<CR>
 nnoremap <M-V> :e ~/_gvimrc<CR>
+nnoremap <M-P> :e ~/.vim/rc/dein.toml<CR>
+
 "現在ファイル再読込
 nnoremap <M-s> :source%<CR>
+ｆｓｄｆｄｓｆｓｄｆ
+ｆｓｄｆｓｄ
 
+ｆｓｄｆｓｄｆｓｄｆ
+f
 
-"IMの動作
+"wMの動作
 
-inoremap <ESC>  <ESC>:set iminsert=0<CR>
-inoremap <C-[>  <C-[>:set iminsert=0<CR>
-
+"インサートモード時以外はIMEをOFFにする
+augroup InsModeAu
+    autocmd!
+    autocmd InsertEnter,CmdwinEnter * set noimdisable
+    autocmd InsertLeave,CmdwinLeave * set imdisable
+augroup END
 "----------------------------------------------------------------------------------------------------
 
 "helpの中のリンクへ移動
@@ -316,10 +323,10 @@ endif
 
 "Denite
 "キーマップ
-nnoremap <M-b> :Denite -auto_preview -mode=normal buffer<CR>
-nnoremap <M-f> :Denite -auto_preview -mode=normal file/old<CR>
-nnoremap <M-F> :Denite -auto_preview -mode=normal file_mru<CR>
-nnoremap <M-y> :Denite -auto_preview -mode=normal neoyank<CR>
+nnoremap <M-b> :Denite  -mode=normal buffer<CR>
+nnoremap <M-f> :Denite  -mode=normal file/old<CR>
+nnoremap <M-F> :Denite  -mode=normal file_mru<CR>
+nnoremap <M-y> :Denite  -mode=normal neoyank<CR>
 " カラースキームの切り替えを簡単にする
 " http://inputxoutput.com/vim-advent-calendar-2012/
 nnoremap <Leader>dc :Denite -auto-preview  colorscheme<CR>
@@ -358,6 +365,7 @@ endfunction "}}}
 let &tabline = '%!'. s:SID_PREFIX() . 'my_tabline()'
 set showtabline=2 " 常にタブラインを表示
 
+"vim-airline
 " The prefix key.
 nnoremap    [Tag]   <Nop>
 nmap    t [Tag]
@@ -377,20 +385,23 @@ map <silent> [Tag]p :tabprevious<CR>
 " tp 前のタブ
 "----------------------------------------------------------------------------------------------------
 "
-"
-"
-"
-"vim-airline
+let g:airline#extensions#tabline#buffer_idx_mode = 1 "タブに番号を表示する
 let g:airline#extensions#tabline#enabled = 1
 "----------------------------------------------------------------------------------------------------
 "
-"カラー設定
-let g:airline_theme = 'molokai'
-let g:molokai_original = 1
-"最後に書く
 syntax enable
 
 
 "----------------------------------------------------------------------------------------------------
+
+function! Mode1()
+echo mode()
+	
+endfunction
+
+
+map <F9> :call Mode1()<CR>
+
+
 
 

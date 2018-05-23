@@ -16,9 +16,6 @@ repo='qpkorr/vim-renamer'
 repo='Shougo/denite.nvim'
 
 #[[plugins]]
-#repo='Shougo/deol.nvim'
-
-#[[plugins]]
 #repo='Shougo/neomru.nvim'
 
 #[[plugins]]
@@ -36,5 +33,17 @@ repo='vim-airline/vim-airline'
 
 [[plugins]]
 repo='vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo='tpope/vim-surround'
+
+[[plugins]]
+repo='Shougo/deoplete.nvim'
+
+[[plugins]]
+repo='Shougo/neco-vim'
+
+[[plugins]]
+repo='Shougo/neco-syntax'
 
 

@@ -16,9 +16,9 @@ lint:
 	vint plugin
 	vint autoload
 	flake8 --version
-	flake8 rplugin/python3/denite
+	flake8 rplugin/python3/deoplete
 	mypy --version
-	mypy --silent-imports rplugin/python3/denite
+	mypy --silent-imports rplugin/python3/deoplete
 
 test:
 	themis --version

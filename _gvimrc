@@ -73,10 +73,18 @@ nnoremap <silent><F3>  :call ToggleGuiOptions('m')<CR>
 
 
 
-"colorscheme molokai    
-colorscheme molokai2
-let g:molokai_original = 1
-
+"colorscheme molokai2
+"let g:molokai_original = 1
+""colorscheme NightScape
+"カラー設定
+"colorscheme solarized
+colorscheme badwolf2
+"set background=light
+"let g:airline_theme = 'badwolf'
+let g:airline_theme = 'badwolf'
+"let g:airline_theme = 'solarized'
+"let g:molokai_original = 1
+"最後に書く
 
 "".gvimrc カラー設定
 ""カラー設定した後にCursorIMを定義する方法
@@ -86,5 +94,4 @@ let g:molokai_original = 1
 "endif
 "gui 
 
-
-"set transparency=240
+"set timransparency=240
