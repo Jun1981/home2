@@ -9,9 +9,9 @@ set encoding=cp932
 scriptencoding cp932
 
 
+
 "----------------------------------------------------------------------------------------------------
 "
-
 "set encoding=utf-8
 "set encoding=utf-8
 "set encoding=cp932
@@ -42,27 +42,70 @@ nnoremap <M-P> :e ~/.vim/rc/dein.toml<CR>
 
 "現在ファイル再読込
 nnoremap <M-s> :source%<CR>
-ｆｓｄｆｄｓｆｓｄｆ
-ｆｓｄｆｓｄ
 
-ｆｓｄｆｓｄｆｓｄｆ
-f
 
+"escを<C-j>にも割当
+imap <C-j> <C-[>
+
+
+""""インサートモード切り替え
+"imap <C-[> <C-[>  :set imdisable<CR> 
+"imap <ESC>  <ESC>:set imdisable<CR>
+"imap <C-c>  <C-c>:set imdisable<CR>
+
+"cmap <C-[> <C-[>  :set imdisable<CR> 
+"cmap <ESC>  <ESC>:set imdisable<CR>
+"cmap <C-c>  <C-c>:set imdisable<CR>
+
+
+"nnoremap i  :set noimdisable<CR>i
+"nnoremap I  :set noimdisable<CR>I
+"nnoremap o  :set noimdisable<CR>o
+"nnoremap O :set noimdisable<CR>O
+"nnoremap a  :set noimdisable<CR>a
+"nnoremap A :set noimdisable<CR>A
+
+"nnoremap : :set noimdisable<CR>:
+"nnoremap / :set noimdisable<CR>/
+
+"全体インデント
+map  <M-i> ggvG=
 "wMの動作
 
-"インサートモード時以外はIMEをOFFにする
-augroup InsModeAu
-    autocmd!
-    autocmd InsertEnter,CmdwinEnter * set noimdisable
-    autocmd InsertLeave,CmdwinLeave * set imdisable
-augroup END
-"----------------------------------------------------------------------------------------------------
+""""インサートモード時以外はIMEをOFFにする
+"augroup InsModeAu
+	"autocmd!
+	"autocmd VimEnter * set imdisable
+	"autocmd InsertEnter * set noimdisable
+	"autocmd CmdwinEnter * set noimdisable
+	"autocmd InsertLeave * set imdisable
+	"autocmd CmdwinLeave * set imdisable
+"augroup END
+""""----------------------------------------------------------------------------------------------------
+
+""インサートモード時以外はIMEをOFFにする
+"augroup InsModeAu
+"autocmd!
+"autocmd InsertEnter,CmdwinEnter * set iminsert=2
+"autocmd InsertLeave,CmdwinLeave * set iminsert=0
+"augroup END
+""----------------------------------------------------------------------------------------------------
+
+
 
 "helpの中のリンクへ移動
 
 "nnoremap <M-j> /|[^ |]\+|<CR>
 "nnoremap <M-j> /|[^ |]\+|<CR>
 "nnoremap <M-j> let @z=/|[^ |]\+| 
+
+
+
+
+
+
+
+
 
 "
 "
@@ -78,33 +121,33 @@ set runtimepath+=$HOME
 
 "guioptionのトグル
 function! ToggleGuiOptions(flag_option)
-  if a:flag_option ==? 'T' " ツールバーの表示/非表示
-    if &guioptions =~# 'T'
-      set guioptions-=T
-    else
-      set guioptions+=T
-    endif
-  elseif a:flag_option ==? 'm' "メニューバーの表示/非表示
-    if &guioptions =~# 'm'
-      set guioptions-=m
-    else
-      set guioptions+=m
-    endif
-  elseif a:flag_option ==? 'r' "右スクロールバーの表示/非表示
-    if &guioptions =~# 'r'
-      set guioptions-=r
-    else
-      set guioptions+=r
-    endif
-  elseif a:flag_option ==? 'l' "左スクロールバーの表示/非表示
-    if &guioptions =~# 'l'
-      set guioptions-=l
-    else
-      set guioptions+=l
-    endif
-  else
-    echo 'bad parameter :' . a:flag_option
-  endif
+	if a:flag_option ==? 'T' " ツールバーの表示/非表示
+		if &guioptions =~# 'T'
+			set guioptions-=T
+		else
+			set guioptions+=T
+		endif
+	elseif a:flag_option ==? 'm' "メニューバーの表示/非表示
+		if &guioptions =~# 'm'
+			set guioptions-=m
+		else
+			set guioptions+=m
+		endif
+	elseif a:flag_option ==? 'r' "右スクロールバーの表示/非表示
+		if &guioptions =~# 'r'
+			set guioptions-=r
+		else
+			set guioptions+=r
+		endif
+	elseif a:flag_option ==? 'l' "左スクロールバーの表示/非表示
+		if &guioptions =~# 'l'
+			set guioptions-=l
+		else
+			set guioptions+=l
+		endif
+	else
+		echo 'bad parameter :' . a:flag_option
+	endif
 endfunction
 
 
@@ -113,28 +156,28 @@ endfunction
 "-----------------------------------------------------------
 nnoremap <F11> :call ToggleFullScreen()<CR>
 function! ToggleFullScreen()
-  if &guioptions =~# 'C'
-    set guioptions-=C
-    if exists('s:go_temp')
-      if s:go_temp =~# 'm'
-        set guioptions+=m
-      endif
-      if s:go_temp =~# 'T'
-        set guioptions+=T
-      endif
-    endif
-    simalt ~r
-  else
-    let s:go_temp = &guioptions
-    set guioptions+=C
-    set guioptions-=m
-    set guioptions-=T
-    simalt ~x
-  endif
+	if &guioptions =~# 'C'
+		set guioptions-=C
+		if exists('s:go_temp')
+			if s:go_temp =~# 'm'
+				set guioptions+=m
+			endif
+			if s:go_temp =~# 'T'
+				set guioptions+=T
+			endif
+		endif
+		simalt ~r
+	else
+		let s:go_temp = &guioptions
+		set guioptions+=C
+		set guioptions-=m
+		set guioptions-=T
+		simalt ~x
+	endif
 endfunction
 "--------------------------------------------------
 if has('kaoriya')
-  set iminsert=1 imsearch=0
+	set iminsert=1 imsearch=0
 endif
 "--------------------------------------------------
 
@@ -144,21 +187,21 @@ endif
 "Vim7.3新機能
 
 if has('persistent_undo')
-  set undodir=./vimundo,~/vimundo
-  augroup vimrC-undofile
-    autocmd!
-	"~/以下のファイルのみ有効
-    autocmd bufReadPre ~/* setlocal undofile
-  augroup END
+	set undodir=./vimundo,~/vimundo
+	augroup vimrC-undofile
+		autocmd!
+		"~/以下のファイルのみ有効
+		autocmd bufReadPre ~/* setlocal undofile
+	augroup END
 endif
 
 set autochdir
 "
 "現在のファイル名を挿入
 if has('win32')
-nnoremap <silent> gkf :let @*=expand('%:p')<CR>:echo "Copy filename to noname register."<CR>
+	nnoremap <silent> gkf :let @*=expand('%:p')<CR>:echo "Copy filename to noname register."<CR>
 elseif has('unix')
-nnoremap <silent> gkf :let @"=expand('%:p')<CR>:echo "Copy filename to noname register."<CR>
+	nnoremap <silent> gkf :let @"=expand('%:p')<CR>:echo "Copy filename to noname register."<CR>
 endif
 
 "現在編集中のバッファのファイル名を変更 
@@ -220,9 +263,9 @@ set display=uhex      " 印字不可能文字を16進数で表示
 
 " カレントウィンドウにのみ罫線を引く
 augroup cch
-autocmd! cch
-autocmd WinLeave * set nocursorline
-autocmd WinEnter,BufRead * set cursorline
+	autocmd! cch
+	autocmd WinLeave * set nocursorline
+	autocmd WinEnter,BufRead * set cursorline
 augroup END
 
 
@@ -289,35 +332,35 @@ let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 " dein.vim がなければ github から落としてくる
 if &runtimepath !~# '/dein.vim'
-  if !isdirectory(s:dein_repo_dir)
-    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
-  endif
-  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
+	if !isdirectory(s:dein_repo_dir)
+		execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+	endif
+	execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
 " 設定開始
 if dein#load_state(s:dein_dir)
-  call dein#begin(s:dein_dir)
+	call dein#begin(s:dein_dir)
 
-  " プラグインリストを収めた TOML ファイル
-  " 予め TOML ファイル（後述）を用意しておく
-  let g:rc_dir    = expand('~/.vim/rc')
-  let s:toml      = g:rc_dir . '/dein.toml'
-  let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
+	" プラグインリストを収めた TOML ファイル
+	" 予め TOML ファイル（後述）を用意しておく
+	let g:rc_dir    = expand('~/.vim/rc')
+	let s:toml      = g:rc_dir . '/dein.toml'
+	let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
 
-  " TOML を読み込み、キャッシュしておく
-  call dein#load_toml(s:toml,      {'lazy': 0})
-  call dein#load_toml(s:lazy_toml, {'lazy': 1})
+	" TOML を読み込み、キャッシュしておく
+	call dein#load_toml(s:toml,      {'lazy': 0})
+	call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
-  " 設定終了
-  call dein#end()
-  call dein#save_state()
- 
+	" 設定終了
+	call dein#end()
+	call dein#save_state()
+
 endif
 
 " もし、未インストールものものがあったらインストール
 if dein#check_install()
-  call dein#install()
+	call dein#install()
 endif
 "----------------------------------------------------------------------------------------------------
 
@@ -340,27 +383,27 @@ nnoremap <Leader>dc :Denite -auto-preview  colorscheme<CR>
 "タブ関係
 " Anywhere SID.
 function! s:SID_PREFIX()
-  return matchstr(expand('<sfile>'), '<SNR>\d\+_\zeSID_PREFIX$')
+	return matchstr(expand('<sfile>'), '<SNR>\d\+_\zeSID_PREFIX$')
 endfunction
 
 " Set tabline.
 function! s:my_tabline()  "{{{
-  let s = ''
-  for i in range(1, tabpagenr('$'))
-    let bufnrs = tabpagebuflist(i)
-    let bufnr = bufnrs[tabpagewinnr(i) - 1]  " first window, first appears
-    let no = i  " display 0-origin tabpagenr.
-    let mod = getbufvar(bufnr, '&modified') ? '!' : ' '
-    let title = fnamemodify(bufname(bufnr), ':t')
-    let title = '[' . title . ']'
-    let s .= '%'.i.'T'
-    let s .= '%#' . (i == tabpagenr() ? 'TabLineSel' : 'TabLine') . '#'
-    let s .= no . ':' . title
-    let s .= mod
-    let s .= '%#TabLineFill# '
-  endfor
-  let s .= '%#TabLineFill#%T%=%#TabLine#'
-  return s
+	let s = ''
+	for i in range(1, tabpagenr('$'))
+		let bufnrs = tabpagebuflist(i)
+		let bufnr = bufnrs[tabpagewinnr(i) - 1]  " first window, first appears
+		let no = i  " display 0-origin tabpagenr.
+		let mod = getbufvar(bufnr, '&modified') ? '!' : ' '
+		let title = fnamemodify(bufname(bufnr), ':t')
+		let title = '[' . title . ']'
+		let s .= '%'.i.'T'
+		let s .= '%#' . (i == tabpagenr() ? 'TabLineSel' : 'TabLine') . '#'
+		let s .= no . ':' . title
+		let s .= mod
+		let s .= '%#TabLineFill# '
+	endfor
+	let s .= '%#TabLineFill#%T%=%#TabLine#'
+	return s
 endfunction "}}}
 let &tabline = '%!'. s:SID_PREFIX() . 'my_tabline()'
 set showtabline=2 " 常にタブラインを表示
@@ -371,7 +414,7 @@ nnoremap    [Tag]   <Nop>
 nmap    t [Tag]
 " Tab jump
 for n in range(1, 9)
-  execute 'nnoremap <silent> [Tag]'.n  ':<C-u>tabnext'.n.'<CR>'
+	execute 'nnoremap <silent> [Tag]'.n  ':<C-u>tabnext'.n.'<CR>'
 endfor
 " t1 で1番左のタブ、t2 で1番左から2番目のタブにジャンプ
 
@@ -393,15 +436,4 @@ syntax enable
 
 
 "----------------------------------------------------------------------------------------------------
-
-function! Mode1()
-echo mode()
-	
-endfunction
-
-
-map <F9> :call Mode1()<CR>
-
-
-
 
